@@ -1,0 +1,95 @@
+// dzn Common Functions (remove if not using it)
+#include "dzn_commonFunctions\dzn_commonFunctions.hpp"
+#include "dzn_commonFunctions\ui\baseDialogs.hpp"
+#include "dzn_commonFunctions\ui\copyPasteDialog.hpp"
+#include "dzn_commonFunctions\ui\dynamicDialog.hpp"
+
+// Debriefings
+#include "dzn_tSFramework\Modules\MissionConditions\Endings.hpp"
+
+OnLoadName = "Lance Brigade (LB1A)";
+
+enableDebugConsole = 2;
+disabledAI = 1;
+
+respawn = 3;
+respawnOnStart = 1;
+respawnDelay = 10;
+
+class Params
+{   
+	class par_daytime
+	{
+		title = "Время суток";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
+		texts[] = {
+			"Случайно",
+			"01:00",
+			"02:00",
+			"03:00",
+			"04:00",
+			"05:00",
+			"06:00",
+			"07:00",
+			"08:00",
+			"09:00",
+			"10:00",
+			"11:00",
+			"12:00",
+			"13:00",
+			"14:00",
+			"15:00",
+			"16:00",
+			"17:00",
+			"18:00",
+			"19:00",
+			"20:00",
+			"21:00",
+			"22:00",
+			"23:00",
+			"24:00"
+		};
+		default = 10;
+	};
+	class par_weather
+	{
+		title = "Погода";
+		values[] = {0,1,2,3,4,5};
+		texts[] = {
+			"Случайно"
+			,"Ясно"
+			,"Облачно"
+			,"Пасмурно"
+			,"Дождь"
+			,"Гроза"
+		};
+		default = 0;
+	};
+
+	// class par_delimiter1
+	// {
+	// 	title = " ";
+	// 	values[] = {0};
+	// 	texts[] = {""};
+	// };
+
+	// class par_marketSystem
+	// {
+	// 	title = "Рыночная система";
+	//	values[] = {0,1};
+	//	texts[] = {
+	//		"Нет"
+	//		, "Да"
+	//	}
+	// };
+	// class par_marketSystem_balance
+	// {
+	// 	title = "Начальный баланс";
+	//	values[] = {5000, 10000, 20000, 50000, 75000, 100000};
+	//	default = 10000;
+	// };
+
+
+};
+
+
