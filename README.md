@@ -1,4 +1,5 @@
-# CO22-Lance-Brigade
+# CO22 Lance Brigade
+##### Version: LB1A
 <br />Terrain: Nogova (CUP)
 <br />Mods: ACE3, RHS, CUP, TRYK
 
