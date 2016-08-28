@@ -1,7 +1,7 @@
 // TFAR disable radio
 tf_no_auto_long_range_radio = true;
 
-// Services
+// Radio Services (ACE Self-interaction actions)
 call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 
 // Air Taxi
