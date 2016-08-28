@@ -2,7 +2,7 @@
 tf_no_auto_long_range_radio = true;
 
 // Services
-// call compile preProcessFileLineNumbers "Logic\radioServices\serviceActions.sqf";
+call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 
 // Air Taxi
 [] execVM "Logic\dzn_atc\Init.sqf";
