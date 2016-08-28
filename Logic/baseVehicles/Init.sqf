@@ -72,8 +72,8 @@ dzn_fnc_baseVehicles_spawnVehicle = {
 		[_veh, _aceSpareParts select 1, _aceSpareParts select 0] call ace_repair_fnc_addSpareParts;
 		[_veh, _kit, true] spawn dzn_fnc_gear_assignKit;
 		
-		waitUntil {!isNil "dzn_tfar_setVehicleLR"};
-		[_veh, baseVehicles_TFAR_radioSide, _tfarIsolatedAmount] call dzn_tfar_setVehicleLR;
+		waitUntil {!isNil "dzn_fnc_tfar_setVehicleLR"};
+		[_veh, baseVehicles_TFAR_radioSide, _tfarIsolatedAmount] call dzn_fnc_tfar_setVehicleLR;
 		
 		waitUntil { sleep 5; !([getPosASL _this, baseVehicles_vehicleBaseArea] call dzn_fnc_isInLocation) };
 		_this allowDamage true;
