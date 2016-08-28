@@ -67,14 +67,15 @@ dzn_atc_fnc_getPilotClassByPlayerSide = {
 dzn_atc_fnc_spawnAirTaxiVehicle = {
 	// Spawn AirTaxi vehicle at given position
 	// [@VehicleClass, @Position[ call dzn_atc_fnc_spawnAirTaxiVehicle
-	private["_veh","_vehClass","_pos"];
+	params["_vehClass","_pos"];
 	
-	_vehClass = _this select 0;
-	_pos = _this select 1;
-	
-	_veh = createVehicle [_vehClass, _pos, [], 0, "FLY"];			
+	private _veh = createVehicle [_vehClass, _pos, [], 0, "FLY"];			
 	_veh setDir ([_veh, player] call BIS_fnc_dirTo);			
-	[_veh, [0,20,0]] call KK_fnc_setVelocityModelSpaceVisual;
+	[_veh, [0,20,0]] call KK_fnc_setVelocityModelSpaceVisual;	
+	
+	if (dzn_atc_tfar_enabledOverride) then {
+		[_veh, dzn_atc_tfar_side, 0.5] call dzn_fnc_tfar_setVehicleLR;
+	};
 
 	player moveInDriver _veh;
 	
@@ -101,7 +102,7 @@ dzn_atc_fnc_returnAirTaxi = {
 			_grp = createGroup (side player);
 			_pilot = _grp createUnit [call dzn_atc_fnc_getPilotClassByPlayerSide, [0,0,0], [], 0, "NONE"];				
 	
-			if (dzn_atc_useCustomerPilotGear) then { _pilot spawn dzn_atc_customPilotsGear; };
+			if (dzn_atc_useCustomPilotGear) then { _pilot spawn dzn_atc_customPilotsGear; };
 	
 			_pilot assignAsDriver _veh;
 			_pilot moveInDriver _veh;		
