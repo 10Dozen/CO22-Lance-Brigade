@@ -23,3 +23,12 @@
 	waitUntil { time > 0 };
 	// [] execVM "Logic\weather\weatherConditions.sqf";
 };
+
+if (hasInterface) exitWith {};
+
+// Misc Functions
+[] execVM "Logic\commonScripts\Init.sqf";
+
+// Rally points
+[] execVM "Logic\rallypoint\rallypointSystem.sqf";
+
