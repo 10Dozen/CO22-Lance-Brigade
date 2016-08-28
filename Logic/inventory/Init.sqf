@@ -8,9 +8,9 @@ _box = _this;
 /* 	Settings	*/
 _whitelist		= call compile ("[" + preProcessFile "Logic\inventory\Whitelist.sqf" + "]");
 _weapons		= [];
-_magazines 	= [];
-_backpacks	= [];
-_items		= [];
+_magazines 		= [];
+_backpacks		= [];
+_items			= [];
 
 {
 	if (isText (configFile >> "cfgMagazines" >> _x >> "displayName")) then { 
