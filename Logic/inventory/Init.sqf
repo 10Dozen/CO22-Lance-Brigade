@@ -6,7 +6,7 @@ private["_boxClass","_boxPosition","_whitelist","_box","_weapons","_magazines","
 _box = _this;
 
 /* 	Settings	*/
-_whitelist		= call compile ("[" + preProcessFile "Logic\inventory\whitelist.sqf" + "]");
+_whitelist		= call compile ("[" + preProcessFile "Logic\inventory\Whitelist.sqf" + "]");
 _weapons		= [];
 _magazines 	= [];
 _backpacks	= [];
