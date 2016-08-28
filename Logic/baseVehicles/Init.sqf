@@ -52,7 +52,7 @@ waitUntil { !isNil "ace_repair_fnc_addSpareParts" };
 baseVehicles_vehicleBaseArea = [];
 {
 	baseVehicles_vehicleBaseArea pushBack ([_x, false] call dzn_fnc_convertTriggerToLocation);
-} forEach [baseArea];
+} forEach baseVehicles_baseAreas;
 
 dzn_fnc_baseVehicles_spawnVehicle = {
 	// [@Class, @PosAndDir, @Kit, @AceSpareParts, @TFAR_IsolatedAmount] call dzn_fnc_baseVehicles_spawnVehicle
