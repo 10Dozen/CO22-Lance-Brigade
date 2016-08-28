@@ -20,4 +20,5 @@ baseVehicles_types = [
 	,[ "RHS_Ural_Zu23_MSV_01", "kit_sec_veh_unarmed", 1  ]
 ];
 
+baseVehicles_respawnable = true;
 baseVehicles_TFAR_defaultIsolatedAmount = 0.5;
