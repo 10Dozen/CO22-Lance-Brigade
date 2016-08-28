@@ -11,11 +11,22 @@ call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 [] execVM "Logic\commonScripts\Init.sqf";
 
 // Rally points
-[] execVM "Logic\rallypoint\rallypointSystem.sqf";
+[] execVM "Logic\rallypoint\Init.sqf";
+
+// Service Point
+[] execVM "Logic\servicePoint\Init.sqf";
+
+// Utilities
+[] execVM "Logic\utilities\Init.sqf";
+
+// Weather
+[] execVM "Logic\weather\Init.sqf";
+
+// Holy Bless
+[] execVM "Logic\holyBless\Init.sqf";
 
 
-
-
+// Gear save/set on using arsenal
 [] spawn {
 	saveGearOnArsenalClose_opened = false;
 	["saveGearOnArsenalClose", "onEachFrame", {
@@ -30,32 +41,9 @@ call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 			};
 		};
 	}] call BIS_fnc_addStackedEventHandler;
-
-	/*
-	waitUntil { !isNil "ServiceZone" };
-	["servicePoint", "onEachFrame", {
-		if (vehicle player == player) exitWith {};
-
-		if ((getPosASL player) in ServiceZone) then {
-			(vehicle player) spawn dzn_fnc_serviceVehicle;
-		};
-	}] call BIS_fnc_addStackedEventHandler;
-	*/
-
-	waitUntil { !isNil "Chapel" };
-	Chapel addAction [
-		"<t color='#FFE240' size='1.5'>Pray the God</t>",{
-			[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
-			[] spawn {
-				1000 cutText ["","WHITE OUT",0.3];
-				sleep 1;
-				1000 cutText ["","WHITE IN",1];
-				hint parseText "<t color='#FFE240' size='2'>You feel the blessing</t>";
-			};
-		},"",6,true,true,"","_this distance2d _target < 1.6"
-	];
 };
 
+// Intro
 [] spawn {
 	waitUntil { time > 0 };
 	1000 cutText ["","BLACK",0.01];
@@ -65,13 +53,3 @@ call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 	sleep 3; 1001 cutText ["WELCOME TO CROATIA", "BLACK OUT",1];
 	sleep 5; 1000 cutText ["", "BLACK IN",1]; 1001 cutText ["", "BLACK IN",1];
 };
-
-// [] execVM "Logic\utilities\utilities.sqf";
-
-// Weather Controller
-/*
-[] spawn {
-	waitUntil { time > 0 };
-	[] execVM "Logic\weather\weatherConditions.sqf";
-};
-*/

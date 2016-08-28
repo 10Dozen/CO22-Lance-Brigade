@@ -22,7 +22,7 @@ tSF_module_tSNotesSettings = true;
 
 tSF_module_CCP = false;
 
-tSF_module_tSAdminTools = true;
+tSF_module_tSAdminTools = false;
 
 
 // **************************

@@ -1,5 +1,5 @@
-call compile preProcessFileLineNumbers "Logic\rallypoint\Settings.sqf";
-call compile preProcessFileLineNumbers "Logic\rallypoint\Functions.sqf";
+call compile preprocessFileLineNumbers "Logic\rallypoint\Settings.sqf";
+call compile preprocessFileLineNumbers "Logic\rallypoint\Functions.sqf";
 
 if (isServer) then {
 	RallyPoint_Position = dzn_rp_RallyPointPosition;

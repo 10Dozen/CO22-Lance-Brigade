@@ -8,8 +8,8 @@ if (isDedicated || !hasInterface) exitWith {};
 waitUntil { dzn_atc_CONDITION_BEFORE_INIT };
 
 // Initialization of dzn_atc
-call compile preProcessFileLineNumbers "Logic\dzn_atc\Settings.sqf";
-call compile preProcessFileLineNumbers "Logic\dzn_atc\Functions.sqf";
+call compile preprocessFileLineNumbers "Logic\dzn_atc\Settings.sqf";
+call compile preprocessFileLineNumbers "Logic\dzn_atc\Functions.sqf";
 
 
 // ************** Start of DZN_ATC ********************

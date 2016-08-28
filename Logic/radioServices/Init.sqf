@@ -1,4 +1,4 @@
-call compile preProcessFileLineNumbers "Logic\radioServices\Functions.sqf";
+call compile preprocessFileLineNumbers "Logic\radioServices\Functions.sqf";
 
 
 radioServices_action = [ "dzn_services_action", "Radio", "", { }, {true}]  call ace_interact_menu_fnc_createAction; 

@@ -21,7 +21,7 @@
 
 	// Dynamic Weather
 	waitUntil { time > 0 };
-	// [] execVM "Logic\weather\weatherConditions.sqf";
+    [] execVM "Logic\weather\Init.sqf";
 };
 
 if (hasInterface) exitWith {};
@@ -30,5 +30,5 @@ if (hasInterface) exitWith {};
 [] execVM "Logic\commonScripts\Init.sqf";
 
 // Rally points
-[] execVM "Logic\rallypoint\rallypointSystem.sqf";
+[] execVM "Logic\rallypoint\Init.sqf";
 

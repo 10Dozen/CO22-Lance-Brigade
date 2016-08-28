@@ -14,11 +14,16 @@ dzn_fnc_inventory_addArsenal = {
 };
 
 dzn_fnc_inventory_getWhitelist = {
-	private _whitelist		= call compile ("[" + preProcessFile "Logic\inventory\Whitelist.sqf" + "]");
+	private _whitelist		= [];
 	private _weapons		= [];
 	private _magazines 		= [];
 	private _backpacks		= [];
 	private _items			= [];
+
+	{
+		private _filename = format ["Logic\inventory\%1", _x];
+		_whitelist = _whitelist + call compile ("[" + (preProcessFile _filename) + "]");
+	} forEach dzn_inventory_whitelists;
 
 	{
 		if (isText (configFile >> "cfgMagazines" >> _x >> "displayName")) then { 
