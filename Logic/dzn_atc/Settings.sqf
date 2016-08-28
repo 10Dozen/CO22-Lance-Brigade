@@ -40,3 +40,4 @@ dzn_atc_useCustomPilotGear		=	false;
 dzn_atc_customPilotsGear 		= 	{};
 
 dzn_atc_tfar_enabledOverride		=	true;
+dzn_atc_tfar_side			=	west;
