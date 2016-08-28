@@ -7,6 +7,15 @@ call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 // Air Taxi
 [] execVM "Logic\dzn_atc\Init.sqf";
 
+// Misc Functions
+[] execVM "Logic\commonScripts\Init.sqf";
+
+// Rally points
+[] execVM "Logic\rallypoint\rallypointSystem.sqf";
+
+
+
+
 [] spawn {
 	saveGearOnArsenalClose_opened = false;
 	["saveGearOnArsenalClose", "onEachFrame", {
