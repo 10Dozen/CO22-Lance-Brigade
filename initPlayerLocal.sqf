@@ -7,9 +7,6 @@ tf_no_auto_long_range_radio = true;
 // Air Taxi
 [] execVM "Logic\dzn_atc\Init.sqf";
 
-// Arsenal
-[] execVM "Logic\inventory\Init.sqf";
-
 [] spawn {
 	saveGearOnArsenalClose_opened = false;
 	["saveGearOnArsenalClose", "onEachFrame", {
