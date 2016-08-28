@@ -36,7 +36,7 @@ dzn_atc_pilotsPerSide 			= [
 ];
 
 // Custom pilot gear code to execute: _this = unit 
-dzn_atc_useCustomerPilotGear		=	false;
+dzn_atc_useCustomPilotGear		=	false;
 dzn_atc_customPilotsGear 		= 	{};
 
 dzn_atc_tfar_enabledOverride		=	true;
