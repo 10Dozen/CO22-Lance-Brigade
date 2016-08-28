@@ -9,14 +9,9 @@
 
 // Common Script Stuff
 [] spawn {
-	[] execVM "Logic\commonScripts\Init.sqf";
-
 	// Service Logic
 	// [] execVM "Logic\service\serviceLogic.sqf";
 
 	// Tasks
 	// [] execVM "Logic\tasks\taskFunctions.sqf";
-
-	// Rally points
-	// [] execVM "Logic\rallypoint\rallypointSystem.sqf";
 };
