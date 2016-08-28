@@ -4,8 +4,11 @@ tf_no_auto_long_range_radio = true;
 // Services
 // call compile preProcessFileLineNumbers "Logic\radioServices\serviceActions.sqf";
 
-Air Taxi
+// Air Taxi
 [] execVM "Logic\dzn_atc\Init.sqf";
+
+// Arsenal
+[] execVM "Logic\inventory\Init.sqf";
 
 [] spawn {
 	saveGearOnArsenalClose_opened = false;
