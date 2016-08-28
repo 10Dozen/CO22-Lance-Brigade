@@ -1,10 +1,8 @@
+[] execVM "Logic\baseVehicles\Init.sqf";
+
 [] spawn {
 	waitUntil { !isNil "arsenalBox1" };
 	// arsenalBox1 execVM "Logic\inventory\createWhiteListedArsenal.sqf";
-};
-
-[] spawn {
-	// [] execVM "Logic\baseVehicles\baseRespawnableVehicles.sqf";
 };
 
 [] spawn {
