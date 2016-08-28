@@ -1,7 +1,3 @@
-//	**************
-//	Creates an object and assign white-listed arsenal to it.
-//	**************
-
 call compile preProcessFileLineNumbers "Logic\inventory\Settings.sqf";
 call compile preProcessFileLineNumbers "Logic\inventory\Functions.sqf";
 
