@@ -1,9 +1,8 @@
+// Base Vehicles
 [] execVM "Logic\baseVehicles\Init.sqf";
 
-[] spawn {
-	waitUntil { !isNil "arsenalBox1" };
-	// arsenalBox1 execVM "Logic\inventory\createWhiteListedArsenal.sqf";
-};
+// Arsenal
+[] execVM "Logic\inventory\Init.sqf";
 
 [] spawn {
 	// Date Params
