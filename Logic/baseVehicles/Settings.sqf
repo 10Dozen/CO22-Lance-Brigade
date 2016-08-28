@@ -20,7 +20,7 @@ baseVehicles_types = [
 	,[ "RHS_Ural_Zu23_MSV_01", "kit_sec_veh_unarmed", ["ACE_Wheel", 1] ]
 ];
 
-baseVehicles_baseArea				= synchronizedObjects baseArea; // Area where vehicles are invincible until leave
+baseVehicles_baseAreas				= synchronizedObjects baseArea; // Area where vehicles are invincible until leave
 baseVehicles_respawnable 			= true;
 baseVehicles_respawnCheckTimer 			= 60;
 
