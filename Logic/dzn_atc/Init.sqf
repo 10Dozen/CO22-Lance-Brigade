@@ -1,63 +1,16 @@
 // AIR TAXI!!
 if (isDedicated || !hasInterface) exitWith {};
-
-//	************** DZN_AirTaxiCall PARAMETERS ******************
-
-// Condition of initialization
 #define	dzn_atc_CONDITION_BEFORE_INIT	true
 
 
-dzn_atc_onlyLeader 		= 		false;	// Allow AirTaxi for leaders only
-dzn_atc_needLeaderApprove	=		true;
-dzn_atc_exitPoint			= 		getMarkerPos "atcExitPoint"; //[ 6688, 14431, 46];
-	// Pos3d of vehicle exit point (where to vehicles will fly from player). It can be an object - use (getPosASL OBJECT) instead
-
-dzn_atc_useCustomPlacement	=		true; 	// Allow players to choose spawn point of vehicle directly on the map
-dzn_atc_customPlacementMinDist =		700; 		// Minimum distance from player position to nearest position for custom placement
-dzn_atc_customRestrictedLocs	=		[]; 		// List of locations restricted to spawn vehicles
-dzn_atc_placementPoint		=		[getMarkerPos "atcExitPoint" select 0, getMarkerPos "atcExitPoint" select 1, 50];
-	// Pos3d of vehicle spawn point, if custom placement isn't chosen
-dzn_atc_placementPointMarker 	=		true;		// Place marker of Initial Point for ATC
-
-dzn_atc_vehiclesList		= [
-							"B_Heli_Light_01_F"
-							,"RHS_UH60M_d"
-							,"RHS_UH60M_MEV2_d"
-							,"CUP_O_UH1H_TKA"
-							,"CUP_O_Mi17_TK"
-							,"CUP_O_Mi24_D_TK"
-							
-							/*
-							,"LOP_TKA_Mi8MT_Cargo"
-							,'LOP_TKA_Mi24V_AT'
-							*/
-];
-
-dzn_atc_pilotsPerSide 		= [
-							"rhsusf_army_ocp_helipilot"	// West
-							,"O_helipilot_F"	// East
-							,"I_helipilot_F"	// Indep
-							,"C_man_pilot_F"	// Civilian
-];
-
-// Custom pilot gear code to execute: _this = unit 
-dzn_atc_useCustomerPilotGear		=	false;
-dzn_atc_customPilotsGear 		= 	{};
-
-//	************** END OF DZN_AirTaxiCall PARAMETERS ******************
-//
-//
-//
-//
-//
-//
 //	**************	INITIALIZATION 	*************************
 //	
 waitUntil { dzn_atc_CONDITION_BEFORE_INIT };
 
 // Initialization of dzn_atc
-call compile preProcessFileLineNumbers "Logic\dzn_atc\dzn_atc_functions.sqf";
-// call compile preProcessFileLineNumbers "Logic\dzn_atc\dzn_atc_menus.sqf";
+call compile preProcessFileLineNumbers "Logic\dzn_atc\Settings.sqf";
+call compile preProcessFileLineNumbers "Logic\dzn_atc\Functions.sqf";
+
 
 // ************** Start of DZN_ATC ********************
 
