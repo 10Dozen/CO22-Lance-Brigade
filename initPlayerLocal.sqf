@@ -1,6 +1,3 @@
-// TFAR disable radio
-tf_no_auto_long_range_radio = true;
-
 // Radio Services (ACE Self-interaction actions)
 call compile preprocessFileLineNumbers "Logic\radioServices\Init.sqf";
 

@@ -29,10 +29,10 @@ dzn_atc_pilotsPerSide 			= [
 ];
 
 // Custom pilot gear code to execute: _this = unit 
-dzn_atc_useCustomPilotGear		=	false;
+dzn_atc_useCustomPilotGear		=	true;
 dzn_atc_customPilotsGear 		= 	{ 
 	waitUntil { !isNil "dzn_gear_serverInitDone" };
-	[_this, "kit_atc_helipilot"] spawn dzn_fnc_gear_assignKit;
+	[_this, "kit_lance_pilot"] spawn dzn_fnc_gear_assignKit;
 };
 
 dzn_atc_tfar_enabledOverride		=	true;

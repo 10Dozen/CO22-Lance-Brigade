@@ -52,8 +52,9 @@
 , "SMG_01_F" /* Vector SMG */
 , "rhs_weap_M590_8RD" /* M590A1 (Long) */
 
+
+, "rhs_weap_m4a1_blockII_M203"
 , "rhs_weap_mk18" /* Mk 18 Mod 1 */
-, "rhs_weap_m4a1_carryhandle_m203S" /* M4A1 (M203S) */
 , "rhs_weap_m4a1_carryhandle_m203" /* M4A1 (M203) */
 , "rhs_weap_m4a1_carryhandle_grip" /* M4A1 PIP (Gripod) */
 , "rhs_weap_m4a1_carryhandle_grip2" /* M4A1 PIP (AFG) */
@@ -61,20 +62,14 @@
 , "rhs_weap_m16a4_carryhandle_grip" /* M16A4 (Carryhandle/Grip) */
 , "rhs_weap_m16a4_carryhandle" /* M16A4 (Carryhandle) */
 
-, "rhs_weap_M107_w" /* M107 (Woodland) */
-, "rhs_weap_m14ebrri" /* M14 EBR-RI */
-, "CUP_srifle_M24_wdl" /* M24 */
-, "CUP_srifle_Mk12SPR" /* Mk12 SPR */
+, "rhs_weap_m24sws_blk"
 
 , "rhs_weap_m249_pip_S_para" /* M249 PIP (Short/Para) */
 , "rhs_weap_m249_pip_L" /* M249 PIP (Long) */
 , "rhs_weap_m240B" /* M240B */
 
 
-
-
-, "CUP_30Rnd_556x45_Stanag" /* 30Rnd. STANAG */
-, "CUP_20Rnd_556x45_Stanag" /* 20Rnd. STANAG */
+, "rhsusf_5Rnd_762x51_m118_special_Mag"
 , "30Rnd_556x45_Stanag" /* 5.56mm 30Rnd Mag */
 , "rhs_200rnd_556x45_M_SAW" /* 5.56mm M855A1 (Mixed) 200rnd Belt */
 , "rhs_200rnd_556x45_B_SAW" /* 5.56mm M855A1 200rnd Belt */
