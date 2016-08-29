@@ -1,4 +1,4 @@
-dzn_rp_RallyPointPosition	= [5864.39,11351.1,0];
+dzn_rp_RallyPointPosition	= [3068.2,6060.41,0];
 
 dzn_rp_needLeaderApprove	= true;		
 dzn_rp_freeDeploymentFromBase	= true;	// Allows to deploy on rallypoint without permission if player is on base

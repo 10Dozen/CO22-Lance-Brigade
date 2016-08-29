@@ -14,7 +14,7 @@ waitUntil { !isNull findDisplay 52 || getClientState == "BRIEFING SHOWN" || time
 ADD_NOTES;
 
 // If not added accidentally, re-add
-if !(player diarySubjectExists "tSF_NotesSettingsPage") then {
+if !(player diarySubjectExists "utilities") then {
 	ADD_NOTES;
 
 	// If cannot be added until mission start - add after.

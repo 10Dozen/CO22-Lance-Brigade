@@ -77,7 +77,11 @@ dzn_atc_fnc_spawnAirTaxiVehicle = {
 		[_veh, dzn_atc_tfar_side, 0.5] call dzn_fnc_tfar_setVehicleLR;
 	};
 
+	player allowDamage false;
+	moveOut player;
+	player setVelocity [0,0,0];
 	player moveInDriver _veh;
+	[] spawn { sleep 3; player allowDamage true;};
 	
 	_veh
 };

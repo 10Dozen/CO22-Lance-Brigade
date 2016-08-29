@@ -32,3 +32,6 @@ if (hasInterface) exitWith {};
 // Rally points
 [] execVM "Logic\rallypoint\Init.sqf";
 
+// Interactives
+[] execVM "Logic\interactives\Init.sqf";
+

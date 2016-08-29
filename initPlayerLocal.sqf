@@ -2,7 +2,7 @@
 tf_no_auto_long_range_radio = true;
 
 // Radio Services (ACE Self-interaction actions)
-call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
+call compile preprocessFileLineNumbers "Logic\radioServices\Init.sqf";
 
 // Air Taxi
 [] execVM "Logic\dzn_atc\Init.sqf";
@@ -22,9 +22,8 @@ call compile preProcessFileLineNumbers "Logic\radioServices\Init.sqf";
 // Weather
 [] execVM "Logic\weather\Init.sqf";
 
-// Holy Bless
-[] execVM "Logic\holyBless\Init.sqf";
-
+// Interactives
+[] execVM "Logic\interactives\Init.sqf";
 
 // Gear save/set on using arsenal
 [] spawn {

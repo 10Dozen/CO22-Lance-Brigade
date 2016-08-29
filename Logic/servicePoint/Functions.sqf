@@ -6,6 +6,8 @@ dzn_fnc_servicePoint_serviceVehicle = {
 	1000 cutText ["Vehicle Servicing", "PLAIN"];
 	player setVariable ["onServing", true];
 
+	sleep 2;
+
 	sleep dzn_servicePoint_repairTime;
 	_v setDamage 0;
 	{

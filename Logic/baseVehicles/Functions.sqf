@@ -2,14 +2,13 @@ dzn_fnc_baseVehicles_spawnVehicle = {
 	// [@Class, @PosAndDir, @Kit, @AceSpareParts, @TFAR_IsolatedAmount] call dzn_fnc_baseVehicles_spawnVehicle
 	params["_classname","_posAndDir","_kit","_aceSpareParts", "_tfarIsolatedAmount"];
 
-	private["_veh"];
-	_veh = createVehicle [_classname, (_posAndDir select 0), [], 0, 'CAN_COLLIDE'];
+	private _veh = createVehicle [_classname, (_posAndDir select 0), [], 0, 'CAN_COLLIDE'];
 	_veh allowDamage false;
 	_veh setDir (_posAndDir select 1);
 	_veh setPosATL (_posAndDir select 0);
 
-	[_veh, _kit, _aceSpareParts] spawn {
-		params["_veh","_kit","_aceSpareParts"];
+	[_veh, _kit, _aceSpareParts, _tfarIsolatedAmount] spawn {
+		params["_veh","_kit","_aceSpareParts","_tfarIsolatedAmount"];
 
 		waitUntil { !isNil "dzn_gear_serverInitDone" };
 		sleep 2;
@@ -19,8 +18,8 @@ dzn_fnc_baseVehicles_spawnVehicle = {
 		waitUntil {!isNil "dzn_fnc_tfar_setVehicleLR"};
 		[_veh, baseVehicles_TFAR_radioSide, _tfarIsolatedAmount] call dzn_fnc_tfar_setVehicleLR;
 
-		waitUntil { sleep 5; !([getPosASL _this, baseVehicles_vehicleBaseArea] call dzn_fnc_isInLocation) };
-		_this allowDamage true;
+		waitUntil { sleep 5; !([_veh, baseVehicles_vehicleBaseArea] call dzn_fnc_isInLocation) };
+		_veh allowDamage true;
 	};
 
 	_veh

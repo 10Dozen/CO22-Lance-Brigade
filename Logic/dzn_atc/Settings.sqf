@@ -15,17 +15,10 @@ dzn_atc_exitPoint			=	getMarkerPos "atcExitPoint"; // Pos3d of vehicle exit poin
 
 
 dzn_atc_vehiclesList			= [
-							"B_Heli_Light_01_F"
-							,"RHS_UH60M_d"
-							,"RHS_UH60M_MEV2_d"
-							,"CUP_O_UH1H_TKA"
-							,"CUP_O_Mi17_TK"
-							,"CUP_O_Mi24_D_TK"
-							
-							/*
-							,"LOP_TKA_Mi8MT_Cargo"
-							,'LOP_TKA_Mi24V_AT'
-							*/
+							"RHS_MELB_MH6M"
+							,"CUP_O_UH1H_SLA"
+							,"CUP_B_Mi17_CDF"
+							,"RHS_MELB_AH6M_M"
 ];
 
 dzn_atc_pilotsPerSide 			= [

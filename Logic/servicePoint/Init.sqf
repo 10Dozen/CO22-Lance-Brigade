@@ -9,7 +9,7 @@ ServiceZones = [];
 dzn_servicePoint_canCheck = true;
 dzn_servicePoint_waitToCheck = {
 	dzn_servicePoint_canCheck = false;
-	sleep 30;
+	sleep 15;
 	dzn_servicePoint_canCheck = true;
 };
 

@@ -4,8 +4,6 @@
 #include "dzn_commonFunctions\ui\copyPasteDialog.hpp"
 #include "dzn_commonFunctions\ui\dynamicDialog.hpp"
 
-// Debriefings
-#include "dzn_tSFramework\Modules\MissionConditions\Endings.hpp"
 
 OnLoadName = "Lance Brigade (LB1A)";
 
