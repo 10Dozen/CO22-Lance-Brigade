@@ -1,3 +1,5 @@
+#define DEBUG       false
+
 dzn_fnc_TaskManager_getTaskById = {
 	[dzn_TaskManager_availableTasks, _this] call dzn_fnc_getValueByKey
 };
@@ -16,7 +18,7 @@ dzn_fnc_TaskManager_init = {
 	// Task Result page on JIP
 	if (isNil "taskPage") then {
 		taskPage = "taskPage";
-		player createDiarySubject [taskPage, "Rapier Mission Reports"];
+		player createDiarySubject [taskPage, dzn_TaskManager_taskResultPageName];
 
 		if (!isNil "TaskManager_FullReportList" && {!(TaskManager_FullReportList isEqualTo [])}) then {
 			{
@@ -30,7 +32,7 @@ dzn_fnc_TaskManager_init = {
 	};
 
 	// Task Request logic
-	["hq_service", "HQ", { [] spawn dzn_fnc_requestTask; }, {true}] call dzn_fnc_addRadioService;
+	["hq_service", "HQ", { [] spawn dzn_fnc_TaskManager_requestTask; }, {true}] call dzn_fnc_addRadioService;
 	"TaskManager_NewTaskClient" addPublicVariableEventHandler {
 		if (TaskManager_NewTaskClient) then {
 			false call dzn_fnc_TaskManager_runTask;
@@ -99,6 +101,8 @@ dzn_fnc_TaskManager_create = {
 	["type", _taskType] call dzn_fnc_TaskManager_setProperty;
     ["pos", _taskPosition] call dzn_fnc_TaskManager_setProperty;
 
+    if (DEBUG) then { player sideChat format ["TaskManager_create: @Type: %1, @Pos: %2", _taskType, _taskPosition] };
+
 	// This triggers 'dzn_fnc_TaskManager_runTask' both on Server and all Clinets
 	TaskManager_NewTask = true;
 	publicVariableServer "TaskManager_NewTask";
@@ -112,6 +116,8 @@ dzn_fnc_TaskManager_runTask = {
 		, _taskFolder
 	];
 
+	if (DEBUG) then { player sideChat format ["TaskManager_runTask: @TaskSettings: %1",_taskSettings] };
+
 	/*
 		0:  TaskID template
 		1:  Display info:   [ @Task DisplayName template, @Task Description template]
@@ -123,24 +129,37 @@ dzn_fnc_TaskManager_runTask = {
 	["presets", _taskSettings select 2] call dzn_fnc_TaskManager_setProperty;
 	["misc", _taskSettings select 3] call dzn_fnc_TaskManager_setProperty;
 
-	[_this] execVM format ["Logic\tasks\%1\task.sqf", _taskFolder];
+	[_this] execVM format ["Logic\taskManager\%1\Task.sqf", _taskFolder];
 };
 
 dzn_fnc_TaskManager_report = {
 	/*
 		[
-			0: @TaskTitle
-			1: @ResultID
-			2: @AlliedForces Text
-			3: @HostileForces Text
-			4: @Notes Text
-			5: @TaskDesc
-			6: @TaskID
+			@TaskID
+	        , @TaskTitle
+	        , @TaskDesc
+	        , @ResultID
+	        , @AlliedForces Text
+	        , @HostileForces Text
+	        , @Notes Text
 		] call dzn_fnc_TaskManager_report;
 	*/
-	params ["_taskTitle", "_resultID", "_alliedForcesText", "_hostileForcesText", "_notesText", "_taskDesc", "_taskID"];
+
+	params [
+		"_taskID"
+		, "_taskTitle"
+		, "_taskDesc"
+		, "_resultID"
+		, "_alliedForcesText"
+		, "_hostileForcesText"
+		, "_notesText"
+	];
 
 	private _resultText = TaskManager_ResultList select _resultID;
+
+	if (DEBUG) then { player sideChat format ["TaskManager_report: @Title = %1, @Desc = %2, @Result = %3", _taskTitle, _taskDesc, _resultText]};
+
+
 	player createDiaryRecord [
 		taskPage
 		, [

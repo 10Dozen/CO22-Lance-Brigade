@@ -6,7 +6,7 @@
 
 [] spawn {
 	// Date Params
-	private _date = date;
+	private _date = [2017, 3, 10];
 	private _time = "par_daytime" call BIS_fnc_getParamValue;
 	setDate [
 		_date select 0
@@ -35,3 +35,5 @@ if (hasInterface) exitWith {};
 // Interactives
 [] execVM "Logic\interactives\Init.sqf";
 
+// Task Manager
+[] execVM "Logic\taskManager\Init.sqf";

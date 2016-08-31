@@ -1,5 +1,6 @@
 call compile preprocessFileLineNumbers "Logic\taskManager\Settings.sqf";
-call compile preprocessFileLineNumbers "Logic\taskManager\Functions.sqf";
+call compile preprocessFileLineNumbers "Logic\taskManager\Functions_Requester.sqf";
+call compile preprocessFileLineNumbers "Logic\taskManager\Functions_Manager.sqf";
 
 waitUntil { !isNil "dzn_dynai_initialized" && { dzn_dynai_initialized  } };
 if !(isServer) then { waitUntil { !isNil "dzn_fnc_addRadioService" }; };

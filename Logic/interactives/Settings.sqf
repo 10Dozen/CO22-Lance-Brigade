@@ -6,7 +6,14 @@
 		0:  @List of Classname OR List of @Objects  -   if list of classname is used, then all map objects with given class will be applyed
 		1:  @CodeToExecute  -   code to execute, _this as reference; will be spawned
 		2:  @Client/Server/Global   -   locality run ("client","server","global")
+
+		To manually apply code, use
+			[@ReferenceList, @Code] call dzn_fnc_interactives_executeEach
 */
+#define     EXIT_IF_SWITCHED(X)      if (!isNil X) exitWith {}
+#define     SWITCH_ON(X)        missionNamespace setVariable [X, true, true]
+#define     SWITCH_OFF(X)       missionNamespace setVariable [X, nil, true]
+
 dzn_interactives_objectsAndClasses = [
 	[
 		["Land_ToiletBox_F"]
@@ -45,42 +52,62 @@ dzn_interactives_objectsAndClasses = [
 		, "client"
 	]
 	, [
-		["LRRadio_Base"]
+		[LRRadio_Base]
 		, {
 			_this addAction [
-            	"<t color='#FFE240'>Report to HQ</t>",{
-            	    [] spawn {
-	                    player commandChat "Lance-Commander, this is Ebin-One-One. Do you read me? Over.";
-	                    sleep 2;
-	                    [west, "HQ"] commandChat "Ebin-One-One, this is Lance-Commander. Say, over.";
-	                    sleep 2;
-	                    player commandChat (selectRandom [
-	                        "Lance-Commander, wen do we eat :DDDD"
-	                        , "mr Lance-Commander i have losd my rifle :DDD"
-	                        , "chaaarge :DD"
-	                    ]);
-	                    sleep 2;
-	                    [west, "HQ"] commandChat "Damn idiods, you could adlest try!";
+            	"<t color='#FFE240'>Radio: Report to HQ</t>"
+            	,{
+					EXIT_IF_SWITCHED("dzn_interactives_Radio_ReportToHQ");
+					[] spawn {
+						SWITCH_ON("dzn_interactives_Radio_ReportToHQ");
+
+            	        [player, "Lance-Commander, this is Ebin-One-One. Do you read me? Over."] remoteExec ["commandChat", 0];
+	                    sleep 4;
+	                    [[west, "HQ"], "Ebin-One-One, this is Lance-Commander. Say, over."] remoteExec ["commandChat", 0];
+	                    sleep 3;
+	                    [player, (selectRandom [
+                            "Lance-Commander, wen do we eat :DDDD"
+							, "mr Lance-Commander i have losd my rifle :DDD"
+							, "chaaarge :DD"
+						])] remoteExec ["commandChat", 0];
+	                    sleep 3;
+						[[west, "HQ"], "Damn idiods, you could adlest try!"] remoteExec ["commandChat", 0];
+
+						SWITCH_OFF("dzn_interactives_FMRadio_FindSomeMusic");
             	    };
             	},"",6,true,true,"","_this distance2d _target < 1.6"
             ];
 		}
 		, "client"
 	]
-	/*, [
+	, [
 		["Radio"]
 		, {
 			_this addAction [
-            	"<t color='#FFE240'>Find some music</t>",{
-					(_this select 0) say3d [
-						"radioMusic0"
-						, 25
-						, 1
+            	"<t color='#FFE240'>FM Radio: Find some music</t>"
+            	,{
+            	    EXIT_IF_SWITCHED("dzn_interactives_FMRadio_FindSomeMusic");
+            	    SWITCH_ON("dzn_interactives_FMRadio_FindSomeMusic");
+
+					private _fmTrack = selectRandom [
+						"radioMusic1"
+						, "radioMusic2"
+						, "radioMusic3"
+						, "radioMusic4"
+						, "radioMusic5"
+						, "radioMusic6"
+						, "radioMusic7"
+						, "radioMusic8"
 					];
+
+					[_this select 0, [_fmTrack, 25, 1]] remoteExec ["say3D", 0];
+					[] spawn {
+						sleep 15;
+						SWITCH_OFF("dzn_interactives_FMRadio_FindSomeMusic");
+					};
             	},"",6,true,true,"","_this distance2d _target < 1.6"
             ];
 		}
 		, "client"
 	]
-	*/
 ];

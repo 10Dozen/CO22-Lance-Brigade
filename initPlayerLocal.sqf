@@ -22,6 +22,9 @@ call compile preprocessFileLineNumbers "Logic\radioServices\Init.sqf";
 // Interactives
 [] execVM "Logic\interactives\Init.sqf";
 
+// Task Manager
+[] execVM "Logic\taskManager\Init.sqf";
+
 // Gear save/set on using arsenal
 [] spawn {
 	saveGearOnArsenalClose_opened = false;

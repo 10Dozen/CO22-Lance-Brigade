@@ -191,7 +191,12 @@ kit_che_civ =
 	["<BACKPACK ITEMS >> ",[]]
 ];
 
-
+kit_nogova_veh_empty = [
+	[],
+	[],
+	[["ACE_fieldDressing",4],["ACE_tourniquet",1]],
+    []
+];
 
 
 

@@ -1,3 +1,6 @@
+#define DEBUG       false
+#define IFD(X)      if (DEBUG) then { X }
+
 dzn_fnc_TaskManager_getRangeLimit = {
 	[dzn_TaskManager_ranges, _this] call dzn_fnc_getValueByKey
 };
@@ -63,39 +66,46 @@ dzn_fnc_TaskManager_selectByRangeType = {
 dzn_fnc_TaskManager_selectTask = {
 	// ["TaskType", "RangeCategory"] call dzn_fnc_selectTask;
 	params["_type","_rangeType"];
-
-	private _rangeLimit = _rangeType call dzn_fnc_TaskManager_getRangeLimit;
 	private _taskFolder = (_type call dzn_fnc_TaskManager_getTaskById) select 1;
-
-	private _tasksInRange = (_rangeLimit) call compile preprocessFileLineNumbers format [
+	private _tasksInRange = (_rangeType) call compile preprocessFileLineNumbers format [
 		"Logic\taskManager\%1\Positions.sqf"
 		, _taskFolder
 	];
 
+	if (DEBUG) then { player sideChat format ["selectTask: @Type = %1; @InRange = %2.", _type, _tasksInRange]; };
+
 	if (_tasksInRange isEqualTo []) exitWith { [west, "HQ"] sideChat "This is 1-6, We have no missions in your area. Out." };
+
+	if (DEBUG) then { player sideChat format ["selectTask: Selected"]; };
 
 	[_type, selectRandom _tasksInRange] call dzn_fnc_TaskManager_create;
 };
 
 dzn_fnc_TaskManager_endTask = {
-	// [ @TaskTitle, @ResultID, @AlliedForces Text, @HostileForces Text, @Notes Text ] call dzn_fnc_TaskManager_endTask
+	// [ 0, @ResultID, @AlliedForces Text, @HostileForces Text, @Notes Text ] call dzn_fnc_TaskManager_endTask
 
 	/*
 	    TaskManager_CompleteReport = [
-	        @TaskTitle
+	        @TaskID
+	        , @TaskTitle
+	        , @TaskDesc
 	        , @ResultID
 	        , @AlliedForces Text
 	        , @HostileForces Text
 	        , @Notes Text
-
-	        , @TaskDesc
-	        , @TaskID
 		]
     */
+    params["_z","_resultID","_alliedForcesText","_hostileForcesText","_notesText"];
 
-	TaskManager_CompleteReport = _this
-		+ [("info" call dzn_fnc_TaskManager_getProperty) select 1]
-		+ ["task" call dzn_fnc_TaskManager_getProperty];
+	TaskManager_CompleteReport = [
+		"task" call dzn_fnc_TaskManager_getProperty
+		, ("info" call dzn_fnc_TaskManager_getProperty) select 0
+		, ("info" call dzn_fnc_TaskManager_getProperty) select 1
+		, _resultID
+		, _alliedForcesText
+		, _hostileForcesText
+		, _notesText
+	];
 
 	TaskManager_CompleteReport call dzn_fnc_TaskManager_report;
 	publicVariable "TaskManager_CompleteReport";

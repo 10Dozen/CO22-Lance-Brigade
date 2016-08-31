@@ -10,9 +10,12 @@
 	"misc"          - [ @SafetyReward ]
 */
 
+#define DEBUG       true
 
-#define DEBUG	true
+
 params ["_serverExec"];
+
+if (DEBUG) then {  player sideChat format ["Task: @ServerExec: %1", _serverExec] };
 
 // *********************************************
 // TASK Server Init (called from Task Generator)

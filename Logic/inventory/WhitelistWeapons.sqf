@@ -34,8 +34,7 @@
 , "rhs_rpg7_TBG7V_mag" /* TBG-7V */
 , "rhs_weap_rshg2" /* RShG-2 */
 , "rhs_rshg2_mag" /* RShG-2 */
-, "rhs_weap_fgm148" /* FGM-148 Javelin */
-, "rhs_fgm148_magazine_AT" /* Javelin AT */
+
 
 /* Weapons */
 , "rhs_weap_akm_gp25" /* AKM (GP-25) */

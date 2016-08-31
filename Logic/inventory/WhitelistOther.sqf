@@ -6,7 +6,6 @@
 , "TRYK_U_B_WDL_GRY_CombatUniform" /* TRYK Wood land+GRY BDU */
 
 
-, "TRYK_U_B_TANOCP_R_CombatUniformTshirt" /* TRYK TAN+OCP Combat Uniform Roll */
 , "TRYK_U_B_Denim_T_BG_BK" /* TRYK T-shirts Jeans glove(BK) */
 , "TRYK_U_B_Denim_T_BG_WH" /* TRYK T-shirts Jeans glove(WH) */
 , "TRYK_T_camo_Wood" /* TRYK special force T-shirt(Wood) */

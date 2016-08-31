@@ -14,10 +14,10 @@
  
 dzn_civen_locationSettings = [
 	[
-		"LocationCity_F",		["GreeceCivil", [2,6], "GreeceVehicles", [6,10]] 
+		"LocationCity_F",		["NogovaCivil", [1,1], "NogovaVehicles", [1,1]]
 	]
 	,[ 
-		"LocationCamp_F",	["GreeceCivil", [1,1], "GreeceVehicles", [1,1]] 
+		"LocationVillage_F",	["NogovaCivil", [1,1], "NogovaVehicles", [0,1]]
 	]
 ];
 
@@ -38,7 +38,7 @@ dzn_civen_locationSettings = [
  */
 dzn_civen_civilianTypes = [
 	[
-		"GreeceCivil"		, [["C_man_hunter_1_F"], ["kit_civ_greece"], { }]
+		"NogovaCivil"		, [["C_man_hunter_1_F"], ["kit_che_civ"], { }]
 	]
 ];
 
@@ -60,29 +60,20 @@ dzn_civen_civilianTypes = [
  *						If nil - global settings will be used.
  *				
  */
+#define     NOGOVA_CARS    "CUP_C_Skoda_Blue_CIV", "CUP_C_Skoda_Green_CIV", "CUP_O_UAZ_Unarmed_SLA", "CUP_C_Skoda_Red_CIV", "CUP_C_Skoda_White_CIV", "CUP_C_Datsun", "CUP_C_Datsun_4seat", "CUP_C_Datsun_Covered", "CUP_C_Datsun_Plain"
+#define     NOGOVATRUCKS  "CUP_C_Ural_Civ_01", "CUP_C_Ural_Open_Civ_01", "CUP_C_Ural_Civ_03", "CUP_C_Ural_Open_Civ_03", "CUP_C_Ural_Open_Civ_02", "CUP_C_Ural_Civ_02", "C_Truck_02_transport_F", "C_Truck_02_covered_F", "CUP_C_LR_Transport_CTK", "CUP_C_V3S_Open_TKC", "CUP_C_V3S_Covered_TKC", "CUP_C_UAZ_Unarmed_TK_CIV"
 dzn_civen_vehicleTypes = [
 	[
-		"GreeceVehicles"
+		"NogovaVehicles"
 		, [
 			[
-				"C_Hatchback_01_F"
-				,"C_Offroad_01_F"				
-				,"C_SUV_01_F"
-				,"C_Hatchback_01_F"
-				,"C_Offroad_01_F"				
-				,"C_SUV_01_F"
-				,"C_Van_01_box_F"
-				,"C_Van_01_transport_F"
-				,"C_Van_01_box_F"
-				,"C_Van_01_transport_F"				
-				,"C_Truck_02_transport_F"
-				,"C_Truck_02_covered_F"
-				,"C_Offroad_01_repair_F"
-				
+				NOGOVA_CARS
+				, NOGOVA_CARS
+				, NOGOVATRUCKS
 			]	/* ClassNames */ 
-			, ["kit_greece_vehicle","kit_greece_vehicle2"]				/* Kits */
+			, ["kit_nogova_veh_empty"]				/* Kits */
 			, { }				/* Code to execute */
-			, [.7,.5,.2]			/* Fuel,Locked Chance,Damage, nil - if used global */
+			, [.5,.5,.2]			/* Fuel,Locked Chance,Damage, nil - if used global */
 		]
 	]
 ];

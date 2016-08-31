@@ -4,7 +4,7 @@ call compile preprocessFileLineNumbers "Logic\interactives\Settings.sqf";
 #define     APPLY_SEVER_CODE(X,Y)       if (isServer || isDedicated) then { [X, Y] call dzn_fnc_interactives_executeEach; };
 
 dzn_fnc_interactives_executeEach = {
-	// [@Reference, @Code] call dzn_fnc_interactives_executeEach
+	// [@ReferenceList, @Code] call dzn_fnc_interactives_executeEach
 	params ["_reference", "_code"];
 
 	private _objects = [];
