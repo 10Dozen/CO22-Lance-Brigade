@@ -20,13 +20,14 @@ dzn_fnc_civen_getTrafficNeededLocations = {
 		_curTraffic = GetLP(_x, "currentTraffic");
 		if (
 			count (_curTraffic) < dzn_civen_trafficPerLocation 
-			&& { !(_x call dzn_fnc_civen_checkNearPlayers) }
+			&& GetLP(_x, "trafficAvailable")
+			&& { !(_x call dzn_fnc_civen_checkNearPlayers) }			
 		) then {
 			for "_i" from 1 to (dzn_civen_trafficPerLocation - count (_curTraffic) ) do {
 				_trafficLocationList pushBack _x;
 			};		
 		};	
-	} forEach (synchronizedObjects dzn_civen_core);
+	} forEach dzn_civen_trafficLocations;
 	
 	_trafficLocationList
 };
@@ -68,7 +69,7 @@ dzn_fnc_civen_getTrafficEndedElements = {
 			};	
 		
 		} forEach ( GetLP(_x, "currenttraffic") );
-	} forEach (synchronizedObjects dzn_civen_core);
+	} forEach dzn_civen_trafficLocations;
 	
 	_listOfTraffic
 };
@@ -84,7 +85,7 @@ dzn_fnc_civen_createTrafficElement = {
 	
 	params["_loc"];
 	
-	private _destination = selectRandom ( (synchronizedObjects dzn_civen_core) - [_loc] );	
+	private _destination = selectRandom ( dzn_civen_trafficLocations - [_loc] );	
 	
 	/*
 		Vehicle

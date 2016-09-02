@@ -1,9 +1,11 @@
 /*
 	Timers
 */
-dzn_civen_InitTime				=	15; // seconds after mission start
-dzn_civen_UnitSpawnTimeout			= 	2;
-dzn_civen_ParkedSpawnTimeout			=	2;
+dzn_civen_InitTime				=	.1; // seconds after mission start
+dzn_civen_LicationInitTimeout			=	.01;
+dzn_civen_LocationActivateTimeout		=	.01;
+dzn_civen_UnitSpawnTimeout			= 	.01;
+dzn_civen_ParkedSpawnTimeout			=	.01;
 
 /*
  *	Town Civils
@@ -31,7 +33,7 @@ dzn_civen_enableCivilControl		= true;
  
 dzn_civen_allowParkedVehicles				= true;
 dzn_civen_parked_forceAmountPerLocation		= true;	// Is qunatity of parked vehicles calculated according to population of area?
-dzn_civen_parked_forceAmountLimit			= [1,1]; // Min and max amount of parked vehicles per location
+dzn_civen_parked_forceAmountLimit			= [5,5]; // Min and max amount of parked vehicles per location
  
 // Parked vehicles global settings (values will be randomized from 0 to given max value, if ther is no vehoicleType specific)
 
