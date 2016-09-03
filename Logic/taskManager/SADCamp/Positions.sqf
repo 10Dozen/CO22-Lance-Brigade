@@ -1,4 +1,20 @@
+/*
+	@List of available positions = @Range call Positions.sqf
+*/
+#define POSITION_ELEMENT    _x select 0
+#define CHECK_POSITIONS     [_pos, POSITION_ELEMENT, _rangeType] call dzn_fnc_TaskManager_selectByRangeType
+#define GET_POSITION        [call dzn_TaskManager_taskRequestPosition, _this, _positions] call _returnPositions
 
+private _returnPositions = {
+	params["_pos","_rangeType","_positions"];
+	private _result = [];
+	{ if (CHECK_POSITIONS) then { _result pushBack _x; }; } forEach _positions;
+	_result
+};
+
+// *********************************
+// TASK AVAILABLE PLACES
+// *********************************
 private _positions = [
 
 [[1428.13,10854.3,0.00134277],[["Land_TentA_F",168.016,4.645,180,0.003,true,{},true],["Land_TentA_F",139.953,6.433,0,0.005,true,{},true],["AmmoCrates_NoInteractive_Small",74.6794,12.197,0,0.016,true,{},true],["Land_FirePlace_F",129.946,0.611,0,0.176,true,{},true],["Land_TentDome_F",91.536,8.197,330.078,0.024,true,{},true],["CUP_bedna_ammo2X",83.1997,10.499,14.908,0,true,{},true]]]
@@ -24,6 +40,5 @@ private _positions = [
 ];
 
 
-
-
-
+// *********************************
+GET_POSITION;
