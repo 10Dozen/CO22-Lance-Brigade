@@ -5,6 +5,7 @@
 dzn_TaskManager_availableTasks = [
 	[0,	    ["SAD Weapon Cache", "SADCache"]]
 	,[1,	["SAD Insurgent Camp", "SADCamp"]]
+	,[2,    ["Arrest MVP", "MVPArrest"]]
 ];
 
 dzn_TaskManager_ranges = [

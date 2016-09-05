@@ -170,6 +170,9 @@ kit_ins_mg =
 	["<BACKPACK ITEMS >> ",[["PRIMARY MAG",2]]]
 ];
 
+kit_ins_mvp = [];
+
+
 
 /*
 	Civilians

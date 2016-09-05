@@ -15,6 +15,7 @@ if !(isServer || isDedicated) exitWith {};
 
 dzn_civen_initialized = false;
 dzn_civen_trafficGroup = createGroup civilian;
+dzn_civen_trafficTotal = [];
 dzn_civen_locations = [];
 dzn_civen_trafficLocations = [];
 

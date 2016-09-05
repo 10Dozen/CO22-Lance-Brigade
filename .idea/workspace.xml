@@ -20,78 +20,7 @@
     <favorites_list name="LanceBrigade1A.noe" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Settings.sqf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Settings.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Positions.sqf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Positions.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.sqf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Task.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="44" column="88" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.sqf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Task.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.sqf" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logic/taskManager/Settings.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Functions_Manager.sqf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logic/taskManager/Functions_Manager.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="214" column="23" selection-start-line="214" selection-start-column="23" selection-end-line="214" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fn_setComposition.sqf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dzn_commonFunctions/functions/commonFunctions/fn_setComposition.sqf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="93" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -101,10 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Logic/holyBless/Init.sqf" />
-        <option value="$PROJECT_DIR$/Logic/inventory/Settings.sqf" />
-        <option value="$PROJECT_DIR$/Logic/baseVehicles/Init.sqf" />
-        <option value="$PROJECT_DIR$/Logic/dzn_atc/Init.sqf" />
         <option value="$PROJECT_DIR$/Logic/inventory/Init.sqf" />
         <option value="$PROJECT_DIR$/Logic/radioServices/Init.sqf" />
         <option value="$PROJECT_DIR$/Logic/rallypoint/Init.sqf" />
@@ -123,7 +48,6 @@
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCache/taskSettings.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCache/taskPositions.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCache/Init.sqf" />
-        <option value="$PROJECT_DIR$/Logic/taskManager/Settings.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCache/Settings.sqf" />
         <option value="$PROJECT_DIR$/Sounds/RadioSounds.hpp" />
         <option value="$PROJECT_DIR$/description.ext" />
@@ -131,27 +55,32 @@
         <option value="$PROJECT_DIR$/Sounds/FMSounds/FMSounds.hpp" />
         <option value="$PROJECT_DIR$/Logic/inventory/WhitelistOther.sqf" />
         <option value="$PROJECT_DIR$/dzn_tSFramework/Modules/IntroText/Settings.sqf" />
-        <option value="$PROJECT_DIR$/Logic/interactives/Init.sqf" />
-        <option value="$PROJECT_DIR$/Logic/interactives/Settings.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/Init.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/Functions_Requester.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCache/Positions.sqf" />
         <option value="$PROJECT_DIR$/dzn_dynai/Zones.sqf" />
-        <option value="$PROJECT_DIR$/dzn_gear/Kits.sqf" />
         <option value="$PROJECT_DIR$/initPlayerLocal.sqf" />
-        <option value="$PROJECT_DIR$/initServer.sqf" />
         <option value="$PROJECT_DIR$/dzn_tSFramework/Modules/Briefing/tSF_briefing.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/Functions_Manager.sqf" />
         <option value="$PROJECT_DIR$/Logic/inventory/WhitelistWeapons.sqf" />
         <option value="$PROJECT_DIR$/dzn_civen/Configs.sqf" />
-        <option value="$PROJECT_DIR$/dzn_civen/Settings.sqf" />
         <option value="$PROJECT_DIR$/init.sqf" />
-        <option value="$PROJECT_DIR$/dzn_civen/dzn_civen_init.sqf" />
         <option value="$PROJECT_DIR$/dzn_civen/fn/dzn_civen_functions.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCamp/Settings.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCamp/Positions.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCamp/Task.sqf" />
         <option value="$PROJECT_DIR$/Logic/taskManager/SADCache/Task.sqf" />
+        <option value="$PROJECT_DIR$/Logic/taskManager/MVPArrest/Positions.sqf" />
+        <option value="$PROJECT_DIR$/Logic/taskManager/MVPArrest/Settings.sqf" />
+        <option value="$PROJECT_DIR$/dzn_gear/Kits.sqf" />
+        <option value="$PROJECT_DIR$/Logic/taskManager/Settings.sqf" />
+        <option value="$PROJECT_DIR$/Logic/interactives/Settings.sqf" />
+        <option value="$PROJECT_DIR$/dzn_civen/dzn_civen_init.sqf" />
+        <option value="$PROJECT_DIR$/dzn_civen/fn/dzn_civen_trafficFunctions.sqf" />
+        <option value="$PROJECT_DIR$/dzn_civen/Settings.sqf" />
+        <option value="$PROJECT_DIR$/Logic/interactives/Init.sqf" />
+        <option value="$PROJECT_DIR$/initServer.sqf" />
+        <option value="$PROJECT_DIR$/Logic/taskManager/MVPArrest/Task.sqf" />
       </list>
     </option>
   </component>
@@ -186,6 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -246,6 +176,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taskManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MVPArrest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanceBrigade1A.noe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanceBrigade1A.noe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dzn_commonFunctions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -286,14 +238,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="commonFunctions" />
+              <option name="myItemId" value="mapFunctions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanceBrigade1A.noe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanceBrigade1A.noe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dzn_commonFunctions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="areaFunctions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -584,7 +557,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16442543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16442543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -618,6 +591,62 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Positions.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Task.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="88" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Task.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/Functions_Manager.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="214" column="23" selection-start-line="214" selection-start-column="23" selection-end-line="214" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_commonFunctions/functions/commonFunctions/fn_setComposition.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="93" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dzn_civen/fn/dzn_civen_functions.sqf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -631,16 +660,6 @@
         <state relative-caret-position="456">
           <caret line="402" column="4" selection-start-line="402" selection-start-column="4" selection-end-line="402" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Positions.sqf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="13" />
-          <folding>
-            <element signature="e#631#2516#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Settings.sqf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="70" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dzn_commonFunctions/functions/commonFunctions/fn_setComposition.sqf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -686,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCamp/Task.sqf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="748">
           <caret line="44" column="88" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="88" />
           <folding />
         </state>
@@ -694,8 +705,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/taskManager/Functions_Manager.sqf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="3638">
           <caret line="214" column="23" selection-start-line="214" selection-start-column="23" selection-end-line="214" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Positions.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="71" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="13" />
+          <folding>
+            <element signature="e#631#2516#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/MVPArrest/Positions.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -703,15 +740,167 @@
     <entry file="file://$PROJECT_DIR$/Logic/taskManager/SADCache/Task.sqf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <caret line="26" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_commonFunctions/functions/commonFunctions/fn_createVehicleCrew.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="57" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_commonFunctions/functions/commonFunctions/fn_isPlayerNear.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="70" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_gear/Kits.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/MVPArrest/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/taskManager/Settings.sqf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="306">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_dynai/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/interactives/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
+          <folding>
+            <element signature="e#896#1280#1" expanded="false" />
+            <element signature="e#917#1275#1" expanded="false" />
+            <element signature="e#966#1219#1" expanded="false" />
+            <element signature="e#981#1213#0" expanded="false" />
+            <element signature="e#1028#1130#0" expanded="false" />
+            <element signature="e#1317#1904#1" expanded="false" />
+            <element signature="e#1420#1899#1" expanded="false" />
+            <element signature="e#1484#1834#1" expanded="false" />
+            <element signature="e#1593#1818#0" expanded="false" />
+            <element signature="e#1947#2999#1" expanded="false" />
+            <element signature="e#1968#2994#1" expanded="false" />
+            <element signature="e#2042#2929#1" expanded="false" />
+            <element signature="e#2118#2913#0" expanded="false" />
+            <element signature="e#2501#2682#1" expanded="false" />
+            <element signature="e#2524#2680#1" expanded="false" />
+            <element signature="e#3037#3760#1" expanded="false" />
+            <element signature="e#3058#3755#1" expanded="false" />
+            <element signature="e#3138#3690#1" expanded="false" />
+            <element signature="e#3325#3507#1" expanded="false" />
+            <element signature="e#3590#3674#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_civen/dzn_civen_init.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_civen/fn/dzn_civen_trafficFunctions.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="201" column="2" selection-start-line="201" selection-start-column="2" selection-end-line="201" selection-end-column="2" />
+          <folding>
+            <element signature="e#130#403#0" expanded="false" />
+            <element signature="e#1529#2010#0" expanded="false" />
+            <element signature="e#1558#2004#1" expanded="false" />
+            <element signature="e#2658#2674#0" expanded="false" />
+            <element signature="e#2806#3003#1" expanded="false" />
+            <element signature="e#2891#2951#0" expanded="false" />
+            <element signature="e#2957#3000#0" expanded="false" />
+            <element signature="e#3126#3212#0" expanded="false" />
+            <element signature="e#3218#3325#0" expanded="false" />
+            <element signature="e#3343#3425#1" expanded="false" />
+            <element signature="e#3523#3603#0" expanded="false" />
+            <element signature="e#3750#3771#0" expanded="false" />
+            <element signature="e#4015#4681#0" expanded="false" />
+            <element signature="e#4358#4432#0" expanded="false" />
+            <element signature="e#4439#4511#1" expanded="false" />
+            <element signature="e#4600#4644#0" expanded="false" />
+            <element signature="e#4650#4677#0" expanded="false" />
+            <element signature="e#5291#5524#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_civen/Configs.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initServer.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/interactives/Init.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_civen/Settings.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzn_commonFunctions/functions/mapFunctions/fn_getPosOnMapGrid.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logic/taskManager/MVPArrest/Task.sqf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>

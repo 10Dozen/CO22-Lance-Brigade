@@ -19,12 +19,14 @@ dzn_fnc_civen_getTrafficNeededLocations = {
 	{
 		_curTraffic = GetLP(_x, "currentTraffic");
 		if (
-			count (_curTraffic) < dzn_civen_trafficPerLocation 
+			count (_curTraffic) < dzn_civen_trafficPerLocation
+			&& dzn_civen_trafficTotal < dzn_civen_trafficMaxAmount
 			&& GetLP(_x, "trafficAvailable")
 			&& { !(_x call dzn_fnc_civen_checkNearPlayers) }			
 		) then {
 			for "_i" from 1 to (dzn_civen_trafficPerLocation - count (_curTraffic) ) do {
 				_trafficLocationList pushBack _x;
+				dzn_civen_trafficTotal = dzn_civen_trafficTotal + 1;
 			};		
 		};	
 	} forEach dzn_civen_trafficLocations;
@@ -170,8 +172,8 @@ dzn_fnc_civen_createTrafficElement = {
 	_loc setVariable [
 		"dzn_civen_currentTraffic"
 		, (_loc getVariable "dzn_civen_currentTraffic") + [_v]
-	];	
-	
+	];
+
 	/*
 		Move traffic element	
 	*/
@@ -196,6 +198,7 @@ dzn_fnc_civen_excludeTrafficElement = {
 		"dzn_civen_currentTraffic"
 		, (_loc getVariable "dzn_civen_currentTraffic") - [_this]
 	];
+	dzn_civen_trafficTotal = dzn_civen_trafficTotal - 1;
 };
 
 
