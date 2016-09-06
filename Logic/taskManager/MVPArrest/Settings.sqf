@@ -5,7 +5,7 @@ private ["_taskID", "_taskSafetyReward", "_taskDisplayName", "_taskDesc", "_task
  * ********************************* */
 
 _taskDisplayName        = "Arrest MVP at %1";
-_taskDesc               = "Find and arrest insurgent collaborator at grid %1. Return MVP to Lance camp.";
+_taskDesc               = "Find and arrest insurgent collaborator at grid %1. Return MVP to Lance camp. MVP ofthen wear beret, so be careful with men of fashion.";
 
 _taskID                 = "task_MVPArrest_%1";
 _taskSafetyReward       = 100;

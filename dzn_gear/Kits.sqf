@@ -203,6 +203,29 @@ kit_che_civ =
 	["<BACKPACK ITEMS >> ",[]]
 ];
 
+kit_che_civ_supplyOwner1 = [
+	["<EQUIPEMENT >>  ","CUP_U_C_Priest_01","","","","TRYK_Beard_BW4"]
+	,["<PRIMARY WEAPON >>  ","","",["","","",""]]
+	,["<LAUNCHER WEAPON >>  ","","",["","","",""]]
+	,["<HANDGUN WEAPON >>  ","","",["","","",""]]
+	,["<ASSIGNED ITEMS >>  "]
+	,["<UNIFORM ITEMS >> ",[]]
+	,["<VEST ITEMS >> ",[]]
+	,["<BACKPACK ITEMS >> ",[]]
+];
+
+kit_che_civ_supplyOwner2 = [
+	["<EQUIPEMENT >>  ","CUP_U_C_Profiteer_02","","","H_Cap_blk","G_Squares_Tinted"]
+	,["<PRIMARY WEAPON >>  ","","",["","","",""]]
+	,["<LAUNCHER WEAPON >>  ","","",["","","",""]]
+	,["<HANDGUN WEAPON >>  ","","",["","","",""]]
+	,["<ASSIGNED ITEMS >>  "]
+	,["<UNIFORM ITEMS >> ",[]]
+	,["<VEST ITEMS >> ",[]]
+	,["<BACKPACK ITEMS >> ",[]]
+];
+
+
 kit_nogova_veh_empty = [
 	[],
 	[],

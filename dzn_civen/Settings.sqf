@@ -1,16 +1,16 @@
 /*
 	Timers
 */
-dzn_civen_InitTime				=	.1; // seconds after mission start
-dzn_civen_LicationInitTimeout			=	.01;
-dzn_civen_LocationActivateTimeout		=	.01;
-dzn_civen_UnitSpawnTimeout			= 	.01;
-dzn_civen_ParkedSpawnTimeout			=	.01;
+dzn_civen_InitTime				        =	15; // seconds after mission start
+dzn_civen_LicationInitTimeout			=	2;
+dzn_civen_LocationActivateTimeout		=	5;
+dzn_civen_UnitSpawnTimeout			    = 	2;
+dzn_civen_ParkedSpawnTimeout			=	2;
 
 /*
  *	Town Civils
  */
-dzn_civen_allowCivils			= true; 
+dzn_civen_allowCivils			    = true;
 dzn_civen_enableIdleAnimation		= false;
 dzn_civen_behavior_walkStandChance 	= [	
 						30 /* % Go to Random house */

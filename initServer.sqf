@@ -52,31 +52,29 @@
 		params["_houses","_timer"];
 		{
 			private _zeroes = ["dvere","dvere1l","dvere1r","dvere2l","dvere2r","dvere_spodni_r","dvere_spodni_l","dvere_vrchni","vrata1","vrata2","vratal1","vratar1","vratal2","vratar2","vratal3","vratar3"];
-			private _ones = ["door","door_1_1","door_1_2","door_2_1","door_2_2","dvere1","dvere2","dvere3","dvere4","dvere5","dvere6","dvere7","dvere8","dvere9","dvere10","dvere11","dvere12","dvere13","dvere14","doorl","doorr","door_01","door01_a","door_02","door02_a","door_03","door_04","door_05","door_06","door_1a","door_1","door_2"];
+			private _ones = ["Door1","door","door_1_1","door_1_2","door_2_1","door_2_2","dvere1","dvere2","dvere3","dvere4","dvere5","dvere6","dvere7","dvere8","dvere9","dvere10","dvere11","dvere12","dvere13","dvere14","doorl","doorr","door_01","door01_a","door_02","door02_a","door_03","door_04","door_05","door_06","door_1a","door_1","door_2"];
 
 			private _y = _x;
-			{_y animate [format ["%1", _x], 0];} foreach _zeroes;
-			{_y animate [format ["%1", _x], 1];} foreach _ones;
+			{_y animate [format ["%1", _x], 0];} forEach _zeroes;
+			{_y animate [format ["%1", _x], 1];} forEach _ones;
 			sleep (_timer);
-		} foreach _houses;
+		} forEach _houses;
 
 		HousesProcessed = true;
 	};
 
-	_houses = (nearestObjects [_pos, _houseClases, 2000]) - _processedHouses;
-	_processedHouses = _processedHouses + _houses;
-	[_houses, 0.02] spawn _closeDoors;
-	waitUntil { HousesProcessed };
-
-	_houses = (nearestObjects [_pos, _houseClases, 5000]) - _processedHouses;
-	_processedHouses = _processedHouses + _houses;
-	[_houses, 0.8] spawn _closeDoors;
-	waitUntil { HousesProcessed };
-
-	_houses = (nearestObjects [_pos, _houseClases, 25000]) - _processedHouses;
-	_processedHouses = _processedHouses + _houses;
-	[_houses, 1] spawn _closeDoors;
-	waitUntil { HousesProcessed };
+	{	
+		_houses = (nearestObjects [_pos, _houseClases, (_x select 0)]) - _processedHouses;
+		_processedHouses = _processedHouses + _houses;
+		
+		[_houses, (_x select 1)] spawn _closeDoors;
+		
+		waitUntil { HousesProcessed };
+	} forEach [
+		[2000		,0.02]
+		, [5000	,0.8]
+		, [25000	,1]	
+	];
 };
 
 if (hasInterface) exitWith {};

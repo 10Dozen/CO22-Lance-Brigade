@@ -4,14 +4,14 @@
 	// Specific parameters for SAD Cache task
 	"active"        - true
 	"task"          - task_MVPArrest_14124
-	"type"          - 0
+	"type"          - 2
 	"pos"           - [ @Pos3d, @Radius]
 	"presets"       - [ @DynaiGroups[] , @DynaiZonesProperties[] ]
 	"info"          - [ @DisplayName, @Desc]
 	"misc"          - [ @SafetyReward ]
 */
 
-#define DEBUG       true
+#define DEBUG       false
 
 
 params ["_serverExec"];
@@ -40,11 +40,11 @@ if (_serverExec) exitWith {
 
 	private _taskTitle = format [
 		("info" call dzn_fnc_TaskManager_getProperty) select 0
-		, ([_taskPos, 200] call dzn_fnc_getDisplayTaskPos) call dzn_fnc_getMapGrid_Nogova
+		, ([_taskPos, 200] call dzn_fnc_task_getDisplayTaskPos) call dzn_fnc_getMapGrid_Nogova
 	];
 	private _taskDesc = format [
 		("info" call dzn_fnc_TaskManager_getProperty) select 1
-		, ([_taskPos, 200] call dzn_fnc_getDisplayTaskPos)  call dzn_fnc_getMapGrid_Nogova
+		, ([_taskPos, 200] call dzn_fnc_task_getDisplayTaskPos)  call dzn_fnc_getMapGrid_Nogova
 	];
 	if (DEBUG) then { player setPos _taskPos; };
 	[_taskID, _taskLocation, _taskTitle, _taskDesc, _taskSide] spawn dzn_fnc_task_create;

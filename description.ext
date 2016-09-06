@@ -6,6 +6,8 @@
 
 
 OnLoadName = "Lance Brigade (LB1A)";
+overviewPicture = "overview.jpg";
+loadScreen = "overview.jpg";
 
 enableDebugConsole = 2;
 disabledAI = 1;
@@ -63,31 +65,6 @@ class Params
 		};
 		default = 0;
 	};
-
-	// class par_delimiter1
-	// {
-	// 	title = " ";
-	// 	values[] = {0};
-	// 	texts[] = {""};
-	// };
-
-	// class par_marketSystem
-	// {
-	// 	title = "Рыночная система";
-	//	values[] = {0,1};
-	//	texts[] = {
-	//		"Нет"
-	//		, "Да"
-	//	}
-	// };
-	// class par_marketSystem_balance
-	// {
-	// 	title = "Начальный баланс";
-	//	values[] = {5000, 10000, 20000, 50000, 75000, 100000};
-	//	default = 10000;
-	// };
-
-
 };
 
 

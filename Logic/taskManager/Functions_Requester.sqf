@@ -1,5 +1,23 @@
 #define DEBUG       false
-#define IFD(X)      if (DEBUG) then { X }
+
+/*
+	BRIEF GUIDE TO
+		TASK MANAGER: REQUESTER
+
+	Player acces Task Request menu via ACE Self-interaction key.
+	Once Radio-HQ selected and No active tasks are present -- Task Request menu appears, where player can select
+		task type and range from base.
+		Then TM search for task of given type in selected range via exec of Task\Position.sqf file, which return list of tasks in range.
+		Random one will be selected if exist, or task creation will be cancelled if there is none.
+
+		Once task was found -- task become created. Check Task Manager: Manager for more details about task generation.
+
+	If Radio-HQ was selected while active task exists -- Task Result menu will be displayed and player will be able to finish current task.
+		On clicking 'OK' current active task will be finished with selected result, task become inactive and Task Manager becomes reset.
+*/
+
+
+
 
 dzn_fnc_TaskManager_getRangeLimit = {
 	[dzn_TaskManager_ranges, _this] call dzn_fnc_getValueByKey

@@ -1,5 +1,21 @@
 #define DEBUG       false
 
+/*
+	BRIEF GUIDE TO
+		TASK MANAGER: MANAGER
+
+	Once player selected task from Task Request menu, task will be created step by step:
+
+	1.  Clinet: TaskType and position data (from %Task%\Positions.sqf) are set to TaskManager entity and published; server is triggered to run task
+	2.  Server: Task settings are retrieved from %Task%\Settings.sqf file and set to TaskManager entity
+	3.  Server: %Task%\Task (contain all task logic code) executed with @IsServerExec = true
+		3.1.    All task data becomes formatted and set to Task Entity; BIS task become created;
+	4.  Client: Task runned on client with @IsServerExec = false
+
+	On finishing mission -- players report become added to list of all mission reports and all TaskManager and Task entities become reset.
+
+*/
+
 dzn_fnc_TaskManager_getTaskById = {
 	[dzn_TaskManager_availableTasks, _this] call dzn_fnc_getValueByKey
 };
