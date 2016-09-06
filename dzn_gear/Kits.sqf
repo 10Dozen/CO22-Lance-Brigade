@@ -170,8 +170,17 @@ kit_ins_mg =
 	["<BACKPACK ITEMS >> ",[["PRIMARY MAG",2]]]
 ];
 
-kit_ins_mvp = [];
-
+kit_ins_mvp =
+	[
+	["<EQUIPEMENT >>  ","CUP_U_O_Partisan_VSR_Mixed2","TRYK_V_harnes_od_L","",["CUP_H_C_Beret_02","CUP_H_C_Beret_04","CUP_H_C_Beret_01","CUP_H_C_Beret_03"],"G_Bandanna_oli"],
+	["<PRIMARY WEAPON >>  ","rhs_weap_m24sws_ghillie","rhsusf_5Rnd_762x51_m118_special_Mag",["","","CUP_optic_SB_11_4x20_PM",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ","ItemCompass","ItemWatch","tf_anprc152_2"],
+	["<UNIFORM ITEMS >> ",[["ACE_fieldDressing",8],["ACE_packingBandage",4],["PRIMARY MAG",3]]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["rhs_mag_rdg2_black",2],["PRIMARY MAG",6],["SmokeShellRed",2]]],
+	["<BACKPACK ITEMS >> ",[]]
+];
 
 
 /*

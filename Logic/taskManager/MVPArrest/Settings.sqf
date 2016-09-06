@@ -11,23 +11,24 @@ _taskID                 = "task_MVPArrest_%1";
 _taskSafetyReward       = 100;
 
 _taskPatrols            = selectRandom [true, fasle];
-_taskBodyguard          = selectRandom [true, fasle];
+_taskBodyguard          = if (_taskPatrols) then { selectRandom [true, fasle] } else { true };
 
 /* *********************************
  * TASK DYNAI UNITS
  * ******************************** */
-_taskGroups = [
-	[
-		[
-			if (_taskBodyguard) then { 1 + ceil(random 1) } else { 0 }
-			,	[["O_Soldier_F",["indoors"],"kit_ins_random"],["O_Soldier_F",["indoors"],"kit_ins_random"],["O_Soldier_F",["indoors"],"kit_ins_random"]]
-		]
-		, [
-			if (_taskBodyguard) then { 1 + ceil(random 2) } else { 0 }
-			, [["O_Soldier_F",[],"kit_ins_random"],["O_Soldier_F",[],"kit_ins_random"]]
-		]
-	]
-];
+#define    PATROL_UNIT          ["O_Soldier_F",[],"kit_ins_random"]
+#define    BODYGYARD_UNIT       ["O_Soldier_F",["indoors"],"kit_ins_rheavy"]
+
+private _grp = [];
+if (_taskPatrols) then {
+	_grp pushBack [1 + ceil(random 2), [PATROL_UNIT,PATROL_UNIT]];
+};
+
+if (_taskBodyguard) then {
+	_grp pushBack [1 + ceil(random 1), [BODYGYARD_UNIT,BODYGYARD_UNIT,BODYGYARD_UNIT]];
+};
+
+_taskGroups = [_grp];
 
 _taskZonesProperties = [
 	["EAST", "randomize", ["LIMITED","SAFE","YELLOW","STAG COLUMN"]]

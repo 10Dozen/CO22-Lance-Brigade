@@ -11,7 +11,7 @@
 	"misc"          - [ @SafetyReward ]
 */
 
-#define DEBUG       false
+#define DEBUG       true
 
 
 params ["_serverExec"];
@@ -38,16 +38,21 @@ if (_serverExec) exitWith {
 
 	private _taskReward = ("misc" call dzn_fnc_TaskManager_getProperty) select 0;
 
-	private _taskTitle = format [ ("info" call dzn_fnc_TaskManager_getProperty) select 0, _taskPos call dzn_fnc_getMapGrid];
-	private _taskDesc = format [ ("info" call dzn_fnc_TaskManager_getProperty) select 1, _taskPos call dzn_fnc_getMapGrid];
-
+	private _taskTitle = format [
+		("info" call dzn_fnc_TaskManager_getProperty) select 0
+		, ([_taskPos, 200] call dzn_fnc_getDisplayTaskPos) call dzn_fnc_getMapGrid_Nogova
+	];
+	private _taskDesc = format [
+		("info" call dzn_fnc_TaskManager_getProperty) select 1
+		, ([_taskPos, 200] call dzn_fnc_getDisplayTaskPos)  call dzn_fnc_getMapGrid_Nogova
+	];
 	if (DEBUG) then { player setPos _taskPos; };
 	[_taskID, _taskLocation, _taskTitle, _taskDesc, _taskSide] spawn dzn_fnc_task_create;
 
 	/*
      *	Task Logic
      */
-    private _mvpKit = "";
+    private _mvpKit = "kit_ins_mvp";
 
 	// 1. Get nearest houses
 	private _buildings = [_taskPos, _taskRadius, ["House"], []] call dzn_fnc_getHousesNear;
@@ -77,10 +82,31 @@ if (_serverExec) exitWith {
 	[_mvp, [_taskBuilding], nil, nil, false] spawn dzn_fnc_assignInBuilding;
 	_mvp spawn {
 		private _mvp = _this;
+		MVP = _mvp;
 		sleep 5;
 		_this allowDamage true;
 
-		waitUntil { sleep 5; [_mvp, 20] call dzn_fnc_isPlayerNear };
+		_mvp_Hit_EH = _mvp addEventHandler ["Hit", {
+			private _mvp = _this select 0;
+			private _u = _this select 1;
+
+			if ([_mvp, 10, "bool"] call dzn_fnc_isPlayerNear) then {
+				[_mvp, true] call ACE_captives_fnc_setSurrendered;
+
+				_mvp removeEventHandler ["hit", _mvp getVariable "mvp_eh"];
+				_mvp setVariable ["mvp_eh", nil, true];
+				_mvp setVariable ["mvp_surrnder", true, true];
+			};
+		}];
+		_mvp setVariable ["mvp_eh", _mvp_Hit_EH, true];
+
+		waitUntil {
+			sleep 5;
+			[_mvp, 10] call dzn_fnc_isPlayerNear
+			||
+			_mvp getVariable ["mvp_surrnder", false]
+		};
+
 		[_mvp, true] call ACE_captives_fnc_setSurrendered;
 	};
 

@@ -15,7 +15,7 @@
 dzn_gear_enableIdentitySync			= false;
 
 // Plugins
-dzn_gear_enableGearAssignementTable		= true;
+dzn_gear_enableGearAssignementTable		= false;
 dzn_gear_enableGearNotes			= false;
 
 // **************************

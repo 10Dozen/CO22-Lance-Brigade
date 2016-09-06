@@ -13,9 +13,9 @@ dzn_civen_ParkedSpawnTimeout			=	.01;
 dzn_civen_allowCivils			= true; 
 dzn_civen_enableIdleAnimation		= false;
 dzn_civen_behavior_walkStandChance 	= [	
-						20 /* % Go to Random house */	
+						30 /* % Go to Random house */
 						, 70 /* % Go to Random point */
-						, 20 /* % Stand on current pos */
+						, 0 /* % Stand on current pos */
 					];
 
 // Seconds too return from DANGER to SAFE behavior

@@ -24,24 +24,10 @@
     [] execVM "Logic\weather\Init.sqf";
 };
 
-if (hasInterface) exitWith {};
-
-// Misc Functions
-[] execVM "Logic\commonScripts\Init.sqf";
-
-// Rally points
-[] execVM "Logic\rallypoint\Init.sqf";
-
-// Interactives
-[] execVM "Logic\interactives\Init.sqf";
-
-// Task Manager
-[] execVM "Logic\taskManager\Init.sqf";
-
-
 // Close doors
 [] spawn {
 	waitUntil { time > 5 };
+
 	private _pos = [3050,6090,0];
 	private _houseClases = [
                                "Land_MBG_Hlidac_budka"
@@ -92,3 +78,19 @@ if (hasInterface) exitWith {};
 	[_houses, 1] spawn _closeDoors;
 	waitUntil { HousesProcessed };
 };
+
+if (hasInterface) exitWith {};
+
+// Misc Functions
+[] execVM "Logic\commonScripts\Init.sqf";
+
+// Rally points
+[] execVM "Logic\rallypoint\Init.sqf";
+
+// Interactives
+[] execVM "Logic\interactives\Init.sqf";
+
+// Task Manager
+[] execVM "Logic\taskManager\Init.sqf";
+
+

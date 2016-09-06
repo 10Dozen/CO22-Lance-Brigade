@@ -40,7 +40,7 @@ dzn_interactives_objectsAndClasses = [
 			waitUntil {!isNil "ace_medical_fnc_treatmentAdvanced_fullHealLocal"};
             _this addAction [
             	"<t color='#FFE240' size='1.5'>Pray the God</t>",{
-            		[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
+            		player call dzn_fnc_fullHealPlayer;
             		[] spawn {
             			1000 cutText ["","WHITE OUT",0.3];
             			sleep 1;

@@ -14,10 +14,10 @@
  
 dzn_civen_locationSettings = [
 	[
-		"LocationCity_F",		["NogovaCivil", [1,1], "NogovaVehicles", [1,1]]
+		"LocationCity_F",		["NogovaCivil", [3,6], "NogovaVehicles", [2,4]]
 	]
 	,[ 
-		"LocationVillage_F",	["NogovaCivil", [1,1], "NogovaVehicles", [0,1]]
+		"LocationVillage_F",	["NogovaCivil", [1,2], "NogovaVehicles", [0,1]]
 	]
 ];
 
