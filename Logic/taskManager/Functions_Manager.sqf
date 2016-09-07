@@ -48,7 +48,9 @@ dzn_fnc_TaskManager_init = {
 	};
 
 	// Task Request logic
-	["hq_service", "HQ", { [] spawn dzn_fnc_TaskManager_requestTask; }, {true}] call dzn_fnc_addRadioService;
+	if (hasInterface) then {
+		["hq_service", "HQ", { [] spawn dzn_fnc_TaskManager_requestTask; }, {true}] call dzn_fnc_addRadioService;
+	};
 	"TaskManager_NewTaskClient" addPublicVariableEventHandler {
 		if (TaskManager_NewTaskClient) then {
 			false call dzn_fnc_TaskManager_runTask;

@@ -106,6 +106,7 @@
 , "TRYK_B_Medbag_OD"
 , "tf_rt1523g_bwmod"
 , "tf_rt1523g_big_bwmod"
+, "rhs_rpg_empty"
 
 /* Items */
 

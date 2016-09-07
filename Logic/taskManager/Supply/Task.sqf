@@ -101,7 +101,7 @@ if (_serverExec) exitWith {
 	private _grp = createGroup civilian;
 	{
 		private _u = _grp createUnit ["C_man_hunter_1_F", _x, [], 0, "FORM"];
-		[_u, format ["kit_che_civ_supplyOwner%1", _forEachIndex],false] call dzn_fnc_gear_assignKit;
+		[_u, format ["kit_che_civ_supplyOwner%1", _forEachIndex + 1],false] call dzn_fnc_gear_assignKit;
 
 		_u doWatch ((_u nearRoads 10) select 0);	
 		_u setSkill 0;

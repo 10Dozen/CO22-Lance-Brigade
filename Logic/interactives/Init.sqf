@@ -22,10 +22,13 @@ dzn_fnc_interactives_executeEach = {
 		_objects = _reference;
 	};
 
+	player sideChat str(_objects);
+
 	{
-		if (_x getVariable ["dzn_Interactives_Assigned", false]) exitWith {};
-		_x spawn _code;
-		_x setVariable ["dzn_Interactives_Assigned", true, true];
+		if !(_x getVariable ["dzn_Interactives_Assigned", false]) then {
+			_x spawn _code;
+            _x setVariable ["dzn_Interactives_Assigned", true, false];
+		};
 	} forEach _objects;
 
 	if (_persistant) exitWith {
