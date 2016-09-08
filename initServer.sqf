@@ -22,6 +22,8 @@
 	// Dynamic Weather
 	waitUntil { time > 0 };
     [] execVM "Logic\weather\Init.sqf";
+
+    setTimeMultiplier 2;
 };
 
 // Close doors

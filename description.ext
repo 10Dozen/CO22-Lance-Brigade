@@ -5,7 +5,7 @@
 #include "dzn_commonFunctions\ui\dynamicDialog.hpp"
 
 
-OnLoadName = "Lance Brigade (LB1A)";
+OnLoadName = "Lance Brigade (1B)";
 overviewPicture = "overview.jpg";
 loadScreen = "overview.jpg";
 

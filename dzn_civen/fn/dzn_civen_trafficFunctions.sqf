@@ -179,7 +179,19 @@ dzn_fnc_civen_createTrafficElement = {
 	*/
 	sleep round(20 + random 60 + (random 10)*20);
 	_v setVariable ["dzn_civen_trafficStarted", true];
-	(driver _v) doMove ( ([_destination, "areapos"] call dzn_fnc_civen_getLocProperty) select 0 );
+	_v spawn {
+		private _v = _this;
+		private _dest = _v getVariable "dzn_civen_destination";
+		
+		for "_i" from 0 to 60 do {
+			if (isNull _v) exitWith {};			
+			
+			(driver _v) doMove ( ([_dest, "areapos"] call dzn_fnc_civen_getLocProperty) select 0 );
+			dzn_civen_trafficGroup setSpeedMode "FULL";
+			
+			sleep 30;
+		};	
+	};
 };
 
 dzn_fnc_civen_deleteTrafficElement = {

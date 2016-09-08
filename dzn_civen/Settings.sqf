@@ -51,7 +51,7 @@ dzn_civen_parked_gDamage				=	0.3;
 /*
  * 	Traffic
  */
-dzn_civen_allowTraffic				=	false;
-dzn_civen_trafficMaxAmount          =   8;
+dzn_civen_allowTraffic				=	true;
+dzn_civen_trafficMaxAmount          =   10;
 dzn_civen_trafficPerLocation		=	1;
 dzn_civen_trafficVehicleType		=	["NogovaVehicles"];	// Array of vehicle types (will be randomly chosed)

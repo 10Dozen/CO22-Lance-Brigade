@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=184;
+		nextID=214;
 	};
 	class Camera
 	{
@@ -534,7 +534,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Lance Brigade (1A)";
+		briefingName="Lance Brigade (1B)";
 		overviewText="Lance Brigade is a security force backed by Croatian goverment in order to provide COIN activity on Nogova island";
 		timeOfChanges=1800.0002;
 		startWeather=0.1;

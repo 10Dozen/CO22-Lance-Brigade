@@ -22,8 +22,6 @@ dzn_fnc_interactives_executeEach = {
 		_objects = _reference;
 	};
 
-	player sideChat str(_objects);
-
 	{
 		if !(_x getVariable ["dzn_Interactives_Assigned", false]) then {
 			_x spawn _code;

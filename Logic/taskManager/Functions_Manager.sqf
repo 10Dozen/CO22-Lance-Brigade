@@ -128,26 +128,32 @@ dzn_fnc_TaskManager_create = {
 
 dzn_fnc_TaskManager_runTask = {
 	// @IsServerExec call dzn_fnc_TaskManager_runTask
+	params ["_serverExec"];
+
 	private _taskFolder = (("type" call dzn_fnc_TaskManager_getProperty) call dzn_fnc_TaskManager_getTaskById) select 1;
-	private _taskSettings = call compile preprocessFileLineNumbers format [
-		"Logic\taskManager\%1\Settings.sqf"
-		, _taskFolder
-	];
 
-	if (DEBUG) then { player sideChat format ["TaskManager_runTask: @TaskSettings: %1",_taskSettings] };
+	if (_serverExec) then {
 
-	/*
-		0:  TaskID template
-		1:  Display info:   [ @Task DisplayName template, @Task Description template]
-		2:  Dynai info:     [ @Group template, @Zone properties ]
-		3:  Misc:           [ @TaskSafetyReward ]
-	*/
-	["task", format [ _taskSettings select 0, call dzn_fnc_task_generateGUID]] call dzn_fnc_TaskManager_setProperty;
-	["info", _taskSettings select 1] call dzn_fnc_TaskManager_setProperty;
-	["presets", _taskSettings select 2] call dzn_fnc_TaskManager_setProperty;
-	["misc", _taskSettings select 3] call dzn_fnc_TaskManager_setProperty;
+		private _taskSettings = call compile preprocessFileLineNumbers format [
+			"Logic\taskManager\%1\Settings.sqf"
+			, _taskFolder
+		];
 
-	[_this] execVM format ["Logic\taskManager\%1\Task.sqf", _taskFolder];
+		if (DEBUG) then { player sideChat format ["TaskManager_runTask: @TaskSettings: %1",_taskSettings] };
+
+		/*
+			0:  TaskID template
+			1:  Display info:   [ @Task DisplayName template, @Task Description template]
+			2:  Dynai info:     [ @Group template, @Zone properties ]
+			3:  Misc:           [ @TaskSafetyReward ]
+		*/
+		["task", format [ _taskSettings select 0, call dzn_fnc_task_generateGUID]] call dzn_fnc_TaskManager_setProperty;
+		["info", _taskSettings select 1] call dzn_fnc_TaskManager_setProperty;
+		["presets", _taskSettings select 2] call dzn_fnc_TaskManager_setProperty;
+		["misc", _taskSettings select 3] call dzn_fnc_TaskManager_setProperty;
+	};
+
+	[_serverExec] execVM format ["Logic\taskManager\%1\Task.sqf", _taskFolder];
 };
 
 dzn_fnc_TaskManager_report = {
