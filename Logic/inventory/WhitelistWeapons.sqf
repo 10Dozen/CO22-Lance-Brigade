@@ -50,7 +50,7 @@
 , "CUP_smg_MP5SD6" /* MP5SD6 */
 , "SMG_01_F" /* Vector SMG */
 , "rhs_weap_M590_8RD" /* M590A1 (Long) */
-
+, "CUP_sgun_M1014" /* M1014 */
 
 , "rhs_weap_m4a1_blockII_M203"
 , "rhs_weap_mk18" /* Mk 18 Mod 1 */
@@ -61,14 +61,14 @@
 , "rhs_weap_m16a4_carryhandle_grip" /* M16A4 (Carryhandle/Grip) */
 , "rhs_weap_m16a4_carryhandle" /* M16A4 (Carryhandle) */
 
-, "rhs_weap_m24sws_blk"
+, "rhs_weap_m24sws_blk"	/* M24 */
+, "rhs_weap_m14ebrri"  /* M14 */
 
 , "rhs_weap_m249_pip_S_para" /* M249 PIP (Short/Para) */
 , "rhs_weap_m249_pip_L" /* M249 PIP (Long) */
 , "rhs_weap_m240B" /* M240B */
 
 
-, "rhsusf_5Rnd_762x51_m118_special_Mag"
 , "30Rnd_556x45_Stanag" /* 5.56mm 30Rnd Mag */
 , "rhs_200rnd_556x45_M_SAW" /* 5.56mm M855A1 (Mixed) 200rnd Belt */
 , "rhs_200rnd_556x45_B_SAW" /* 5.56mm M855A1 200rnd Belt */
@@ -90,11 +90,14 @@
 , "CUP_5Rnd_762x51_M24" /* 5Rnd. M24 */
 , "rhsusf_mag_10Rnd_STD_50BMG_M33" /* "10RD .50BMG M33 STD Box " */
 , "rhs_30Rnd_545x39_AK" /* 5N7 30Rnd AK-74 Mag */
-, "rhsusf_20Rnd_762x51_m118_special_Mag" /* 7.62mm M118 20Rnd Mag */
 , "rhsusf_20Rnd_762x51_m993_Mag" /* 7.62mm M993 20Rnd Mag */
 , "rhs_20rnd_9x39mm_SP5" /* SP-5 20Rnd AS Val Mag */
 , "rhs_20rnd_9x39mm_SP6" /* SP-6 20Rnd AS Val Mag */
 , "rhs_30Rnd_762x39mm" /* 57-N-231 30Rnd AK Mag */
+
+, "CUP_8Rnd_B_Beneli_74Slug" /* Benelli's Slugs */
+, "CUP_8Rnd_B_Beneli_74Pellets" /* Benellis's Pellets */
+
 
 , "1Rnd_HE_Grenade_shell" /* 40 mm HE Grenade Round */
 , "rhs_VG40OP_white" /* VG-40OP (White) */
@@ -154,7 +157,11 @@
 , "rhs_acc_pkas_pkp" /* PK-AS */
 , "rhs_acc_perst1ik_ris" /* Perst-1IK */
 , "rhsusf_acc_eotech_xps3" /* XPS3 */
+, "CUP_optic_RCO" /* CUP ACOG w. iron sight */
+
 /* , "optic_DMS" /* DMS */
+
+
 
 /* Grenades and Explosives */
 , "Chemlight_green" /* Chemlight (Green) */

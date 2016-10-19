@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=214;
+		nextID=259;
 	};
 	class Camera
 	{
-		pos[]={3074.4187,31.746754,6053.0825};
-		dir[]={-0.8963632,-0.40854996,0.17271596};
-		up[]={-0.40130544,0.9126578,0.077323712};
-		aside[]={0.18922451,1.0470394e-006,0.98203665};
+		pos[]={3032.4558,245.27176,6072.1514};
+		dir[]={-0.29721487,-0.52732158,-0.7961235};
+		up[]={-0.18446942,0.84957844,-0.49412736};
+		aside[]={-0.93694299,1.0693329e-006,0.34978643};
 	};
 };
 binarizationWanted=0;
@@ -58,7 +58,6 @@ addons[]=
 	"CUP_CAStructures_E_Mil",
 	"A3_Props_F_Exp_Commercial_Market",
 	"A3_Structures_F_Furniture",
-	"ace_sitting",
 	"A3_Structures_F_Civ_Camping",
 	"A3_Structures_F_EPB_Civ_Camping",
 	"CUP_Editor_Buildings_Config",
@@ -73,7 +72,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=27;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -209,43 +208,36 @@ class AddonsMetaData
 		};
 		class Item21
 		{
-			className="ace_sitting";
-			name="ACE3 - Sitting";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item22
-		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="CUP_Editor_Buildings_Config";
 			name="CUP_Editor_Buildings_Config";
 		};
-		class Item24
+		class Item23
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item25
+		class Item24
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item26
+		class Item25
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item27
+		class Item26
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
@@ -534,7 +526,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Lance Brigade (1B)";
+		briefingName="Lance Brigade (1C)";
 		overviewText="Lance Brigade is a security force backed by Croatian goverment in order to provide COIN activity on Nogova island";
 		timeOfChanges=1800.0002;
 		startWeather=0.1;
@@ -13465,9 +13457,9 @@ class Mission
 		class Item9
 		{
 			dataType="Marker";
-			position[]={1502.6541,-3.0887983e-032,5150.6602};
+			position[]={1502.6541,-1.1949847e-026,5150.6602};
 			name="marker_5";
-			text="Airfiled (Island Supply Point 1)";
+			text="Airfield (Island Supply Point 1)";
 			type="mil_marker";
 			colorName="ColorGUER";
 			alpha=0.25;
@@ -13479,30 +13471,30 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={1444.89,-3.0887983e-032,9615.3018};
+			position[]={1444.89,7.1936012e+016,9615.3018};
 			name="marker_6";
-			text="Docs (Island Supply Point 2)";
+			text="Docks (Island Supply Point 2)";
 			type="mil_marker";
 			colorName="ColorGUER";
 			alpha=0.25;
 			a=0.5;
 			b=0.5;
 			id=701;
-			atlOffset=-13.813049;
+			atlOffset=7.1936012e+016;
 		};
 		class Item11
 		{
 			dataType="Marker";
-			position[]={3992.7791,8.3989386e+024,3527.7729};
+			position[]={3992.7791,-1.2727093e-029,3527.7729};
 			name="marker_7";
-			text="Docs (Island Supply Point 3)";
+			text="Docks (Island Supply Point 3)";
 			type="mil_marker";
 			colorName="ColorGUER";
 			alpha=0.25;
 			a=0.5;
 			b=0.5;
 			id=702;
-			atlOffset=8.3989386e+024;
+			atlOffset=11.2924;
 		};
 		class Item12
 		{

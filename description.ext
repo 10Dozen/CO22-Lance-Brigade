@@ -18,9 +18,15 @@ respawnDelay = 10;
 
 class Params
 {   
+	class par_delimeter0
+	{
+		title = "---- Настройки окружения ---------"; 
+		values[] = {0};
+		texts[] = {""};
+	};
 	class par_daytime
 	{
-		title = "Время суток";
+		title = "    Время суток";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
 		texts[] = {
 			"Случайно",
@@ -53,7 +59,7 @@ class Params
 	};
 	class par_weather
 	{
-		title = "Погода";
+		title = "    Погода";
 		values[] = {0,1,2,3,4,5};
 		texts[] = {
 			"Случайно"
@@ -64,6 +70,21 @@ class Params
 			,"Гроза"
 		};
 		default = 0;
+	};
+	class par_timeMultiplier
+	{
+		title = "    Множитель времени";
+		values[] = {0,1,2,3,4,5,6};
+		texts[] = {
+			"х1"
+			,"х1.5"
+			,"х2"
+			,"х2.5"
+			,"х3"
+			,"х3.5"
+			,"х4"
+		};
+		default = 2;
 	};
 };
 

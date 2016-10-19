@@ -21,9 +21,20 @@
 
 	// Dynamic Weather
 	waitUntil { time > 0 };
-    [] execVM "Logic\weather\Init.sqf";
+	[] execVM "Logic\weather\Init.sqf";
 
-    setTimeMultiplier 2;
+    
+	private _timeMultiplier = switch ("par_timeMultiplier" call BIS_fnc_getParamValue) do {
+		case 0: { 1 };
+		case 1: { 1.5 };
+		case 2: { 2 };
+		case 3: { 2.5 };
+		case 4: { 3 };
+		case 5: { 3.5 };
+		case 6: { 4 };
+	};			
+			
+	setTimeMultiplier _timeMultiplier;
 };
 
 // Close doors

@@ -54,7 +54,6 @@
 , "H_HelmetCrew_I" /* Crew Helmet [AAF] */
 , "rhs_Booniehat_ocp" /* Booniehat OEF-CP */
 , "rhs_Booniehat_m81" /* Booniehat M81 */
-, "LOP_H_Booniehat_RACS" /*  */
 , "H_Booniehat_khk_hs" /* Booniehat (Headset) */
 , "H_Watchcap_blk" /* Beanie */
 , "rhsusf_ach_bare_headset" /* ACH (Headset) */
@@ -122,7 +121,6 @@
 , "Binocular" /* Binoculars */
 , "NVGoggles_OPFOR" /* NV Goggles (Gen3, Black) */
 , "ToolKit" /* Toolkit */
-, "ALIVE_Tablet" /*  */
 , "ItemcTabHCam" /* Helmet Camera */
 , "ACE_Banana" /* Banana */
 , "ACE_wirecutter" /* Wirecutter */
@@ -133,3 +131,6 @@
 , "ACE_tourniquet" /* Tourniquet (CAT) */
 , "ACE_morphine" /* Morphine autoinjector */
 , "ACE_atropine" /* Atropine autoinjector */
+
+, "ACE_RangeCard"
+, "ACE_Kestrel4500"
