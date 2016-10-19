@@ -28,18 +28,20 @@ class CfgFunctions
 			class getValueByKey {};			
 			class setValueByKey {};	
 			class setVars {};
+			class selectAndRemove {};
 
 			class assignInVehicle {};
 			class createVehicle  {};
 			class createVehicleCrew {};
 			class isCombatCrewAlive {};
 			class getPosOnGivenDir  {};
-			class isPlayerNear {};
 			
 			class getComposition {};
 			class setComposition {};
 			
 			class inString {};
+			
+			class addAction {};
 		};
 		#endif
 		
@@ -53,10 +55,14 @@ class CfgFunctions
 			class isInWater {};
 			class isInArea2d {};
 			
+			class isPlayerNear {};
+			class isPlayerInArea {};
+			
 			class getRandomPointInZone {};
 			class getZonePosition {};
 			class createPathFromKeypoints {};
-			class createPathFromRandom {};	
+			class createPathFromRandom {};
+			class createPathFromRoads {};
 			
 			class getHousesNear {};	
 			class getHousePositions {};	
@@ -64,17 +70,8 @@ class CfgFunctions
 			class getLocationRoads {};
 			class assignInBuilding {};			
 		};
-		#endif
-		
-		#ifdef BASE_FUNCTIONS
-		class baseFunctions
-		{
-			file = "dzn_commonFunctions\functions\baseFunctions";
-			
-			class deployVehiclesAtBasepoint {};
-		};
-		#endif
-		
+		#endif	
+
 		#ifdef MAP_FUNCTIONS
 		class mapFunctions
 		{
